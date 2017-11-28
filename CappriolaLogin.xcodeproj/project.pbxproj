@@ -56,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2ECB9C1FCDD2EB005BE1C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F2347E81FCDA12900F53B20 /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3F7455EC1FCD97760038A8A6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +89,7 @@
 				3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */,
 				3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */,
 				3F7455FA1FCD97760038A8A6 /* Info.plist */,
-				3F2347E81FCDA12900F53B20 /* Login.swift */,
+				3F2ECB9C1FCDD2EB005BE1C1 /* Model */,
 			);
 			path = CappriolaLogin;
 			sourceTree = "<group>";
