@@ -48,7 +48,7 @@ public class LoginViewController: UIViewController {
 
 extension LoginViewController {
     public convenience init(whereNextViewControllerIs viewController: UIViewController) {
-        self.init(nibName: "LoginViewController", bundle: Bundle.main)
+        self.init(nibName: "LoginViewController", bundle: Bundle(for: LoginViewController.self))
         nextViewController = viewController
     }
 }
