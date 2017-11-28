@@ -10,6 +10,8 @@
 		3F7456001FCD97760038A8A6 /* CappriolaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; };
 		3F7456051FCD97760038A8A6 /* CappriolaLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7456041FCD97760038A8A6 /* CappriolaLoginTests.swift */; };
 		3F7456071FCD97760038A8A6 /* CappriolaLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7456111FCD97AC0038A8A6 /* CappriolaLogin.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */; };
+		3F7456131FCD9B840038A8A6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456121FCD9B840038A8A6 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		3F7455FF1FCD97760038A8A6 /* CappriolaLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappriolaLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7456041FCD97760038A8A6 /* CappriolaLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappriolaLoginTests.swift; sourceTree = "<group>"; };
 		3F7456061FCD97760038A8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CappriolaLogin.podspec; sourceTree = SOURCE_ROOT; };
+		3F7456121FCD9B840038A8A6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		3F7455F81FCD97760038A8A6 /* CappriolaLogin */ = {
 			isa = PBXGroup;
 			children = (
+				3F7456121FCD9B840038A8A6 /* LICENSE */,
+				3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */,
 				3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */,
 				3F7455FA1FCD97760038A8A6 /* Info.plist */,
 			);
@@ -179,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7456131FCD9B840038A8A6 /* LICENSE in Resources */,
+				3F7456111FCD97AC0038A8A6 /* CappriolaLogin.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
