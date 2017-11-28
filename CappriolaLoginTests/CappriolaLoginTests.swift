@@ -17,5 +17,5 @@ class CappriolaLoginTests: XCTestCase {
         XCTAssertEqual(login.method, .GET)
         XCTAssertEqual(login.method.rawValue, "get")
     }
-    
+
 }
