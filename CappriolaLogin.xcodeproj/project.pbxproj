@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F100EE91FD1926E00CA2B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100EE81FD1926E00CA2B8F /* AppDelegate.swift */; };
+		3F100EEB1FD1926E00CA2B8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100EEA1FD1926E00CA2B8F /* ViewController.swift */; };
+		3F100EEE1FD1926E00CA2B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F100EEC1FD1926E00CA2B8F /* Main.storyboard */; };
+		3F100EF01FD1926E00CA2B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F100EEF1FD1926E00CA2B8F /* Assets.xcassets */; };
+		3F100EF31FD1926E00CA2B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F100EF11FD1926E00CA2B8F /* LaunchScreen.storyboard */; };
+		3F100EFE1FD1926E00CA2B8F /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100EFD1FD1926E00CA2B8F /* DemoTests.swift */; };
+		3F100F091FD1926E00CA2B8F /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100F081FD1926E00CA2B8F /* DemoUITests.swift */; };
+		3F100F151FD1927D00CA2B8F /* CappriolaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; };
+		3F100F171FD1A41900CA2B8F /* CappriolaLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F1147941FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1147931FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift */; };
 		3F2347E91FCDA12900F53B20 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2347E81FCDA12900F53B20 /* Login.swift */; };
 		3F7456001FCD97760038A8A6 /* CappriolaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; };
 		3F7456051FCD97760038A8A6 /* CappriolaLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7456041FCD97760038A8A6 /* CappriolaLoginTests.swift */; };
@@ -18,6 +28,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F100EFA1FD1926E00CA2B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F7455ED1FCD97760038A8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F100EE51FD1926E00CA2B8F;
+			remoteInfo = Demo;
+		};
+		3F100F051FD1926E00CA2B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F7455ED1FCD97760038A8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F100EE51FD1926E00CA2B8F;
+			remoteInfo = Demo;
+		};
+		3F100F181FD1A41900CA2B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F7455ED1FCD97760038A8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F7455F51FCD97760038A8A6;
+			remoteInfo = CappriolaLogin;
+		};
 		3F7456011FCD97760038A8A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3F7455ED1FCD97760038A8A6 /* Project object */;
@@ -27,7 +58,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F100F1A1FD1A41A00CA2B8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F100F171FD1A41900CA2B8F /* CappriolaLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F100EE61FD1926E00CA2B8F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F100EE81FD1926E00CA2B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F100EEA1FD1926E00CA2B8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F100EED1FD1926E00CA2B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F100EEF1FD1926E00CA2B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F100EF21FD1926E00CA2B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F100EF41FD1926E00CA2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F100EF91FD1926E00CA2B8F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F100EFD1FD1926E00CA2B8F /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		3F100EFF1FD1926E00CA2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F100F041FD1926E00CA2B8F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F100F081FD1926E00CA2B8F /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
+		3F100F0A1FD1926E00CA2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1147931FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		3F2347E81FCDA12900F53B20 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CappriolaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CappriolaLogin.h; sourceTree = "<group>"; };
@@ -42,6 +101,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F100EE31FD1926E00CA2B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F100F151FD1927D00CA2B8F /* CappriolaLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100EF61FD1926E00CA2B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100F011FD1926E00CA2B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F7455F21FCD97760038A8A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +141,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F100EE71FD1926E00CA2B8F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3F100EE81FD1926E00CA2B8F /* AppDelegate.swift */,
+				3F100EEA1FD1926E00CA2B8F /* ViewController.swift */,
+				3F100EEC1FD1926E00CA2B8F /* Main.storyboard */,
+				3F100EEF1FD1926E00CA2B8F /* Assets.xcassets */,
+				3F100EF11FD1926E00CA2B8F /* LaunchScreen.storyboard */,
+				3F100EF41FD1926E00CA2B8F /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		3F100EFC1FD1926E00CA2B8F /* DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F100EFD1FD1926E00CA2B8F /* DemoTests.swift */,
+				3F100EFF1FD1926E00CA2B8F /* Info.plist */,
+			);
+			path = DemoTests;
+			sourceTree = "<group>";
+		};
+		3F100F071FD1926E00CA2B8F /* DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F100F081FD1926E00CA2B8F /* DemoUITests.swift */,
+				3F100F0A1FD1926E00CA2B8F /* Info.plist */,
+			);
+			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		3F100F141FD1927D00CA2B8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F2ECB9C1FCDD2EB005BE1C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +192,11 @@
 			children = (
 				3F7455F81FCD97760038A8A6 /* CappriolaLogin */,
 				3F7456031FCD97760038A8A6 /* CappriolaLoginTests */,
+				3F100EE71FD1926E00CA2B8F /* Demo */,
+				3F100EFC1FD1926E00CA2B8F /* DemoTests */,
+				3F100F071FD1926E00CA2B8F /* DemoUITests */,
 				3F7455F71FCD97760038A8A6 /* Products */,
+				3F100F141FD1927D00CA2B8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +205,9 @@
 			children = (
 				3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */,
 				3F7455FF1FCD97760038A8A6 /* CappriolaLoginTests.xctest */,
+				3F100EE61FD1926E00CA2B8F /* Demo.app */,
+				3F100EF91FD1926E00CA2B8F /* DemoTests.xctest */,
+				3F100F041FD1926E00CA2B8F /* DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				3F7456041FCD97760038A8A6 /* CappriolaLoginTests.swift */,
+				3F1147931FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift */,
 				3F7456061FCD97760038A8A6 /* Info.plist */,
 			);
 			path = CappriolaLoginTests;
@@ -131,6 +258,61 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3F100EE51FD1926E00CA2B8F /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F100F111FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				3F100EE21FD1926E00CA2B8F /* Sources */,
+				3F100EE31FD1926E00CA2B8F /* Frameworks */,
+				3F100EE41FD1926E00CA2B8F /* Resources */,
+				3F100F1A1FD1A41A00CA2B8F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F100F191FD1A41900CA2B8F /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 3F100EE61FD1926E00CA2B8F /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F100EF81FD1926E00CA2B8F /* DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F100F121FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildPhases = (
+				3F100EF51FD1926E00CA2B8F /* Sources */,
+				3F100EF61FD1926E00CA2B8F /* Frameworks */,
+				3F100EF71FD1926E00CA2B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F100EFB1FD1926E00CA2B8F /* PBXTargetDependency */,
+			);
+			name = DemoTests;
+			productName = DemoTests;
+			productReference = 3F100EF91FD1926E00CA2B8F /* DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F100F031FD1926E00CA2B8F /* DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F100F131FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "DemoUITests" */;
+			buildPhases = (
+				3F100F001FD1926E00CA2B8F /* Sources */,
+				3F100F011FD1926E00CA2B8F /* Frameworks */,
+				3F100F021FD1926E00CA2B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F100F061FD1926E00CA2B8F /* PBXTargetDependency */,
+			);
+			name = DemoUITests;
+			productName = DemoUITests;
+			productReference = 3F100F041FD1926E00CA2B8F /* DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3F7455F51FCD97760038A8A6 /* CappriolaLogin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F74560A1FCD97760038A8A6 /* Build configuration list for PBXNativeTarget "CappriolaLogin" */;
@@ -177,6 +359,20 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Diler Barbosa";
 				TargetAttributes = {
+					3F100EE51FD1926E00CA2B8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					3F100EF81FD1926E00CA2B8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F100EE51FD1926E00CA2B8F;
+					};
+					3F100F031FD1926E00CA2B8F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F100EE51FD1926E00CA2B8F;
+					};
 					3F7455F51FCD97760038A8A6 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -194,6 +390,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3F7455EC1FCD97760038A8A6;
 			productRefGroup = 3F7455F71FCD97760038A8A6 /* Products */;
@@ -202,11 +399,38 @@
 			targets = (
 				3F7455F51FCD97760038A8A6 /* CappriolaLogin */,
 				3F7455FE1FCD97760038A8A6 /* CappriolaLoginTests */,
+				3F100EE51FD1926E00CA2B8F /* Demo */,
+				3F100EF81FD1926E00CA2B8F /* DemoTests */,
+				3F100F031FD1926E00CA2B8F /* DemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F100EE41FD1926E00CA2B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F100EF31FD1926E00CA2B8F /* LaunchScreen.storyboard in Resources */,
+				3F100EF01FD1926E00CA2B8F /* Assets.xcassets in Resources */,
+				3F100EEE1FD1926E00CA2B8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100EF71FD1926E00CA2B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100F021FD1926E00CA2B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F7455F41FCD97760038A8A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +451,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F100EE21FD1926E00CA2B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F100EEB1FD1926E00CA2B8F /* ViewController.swift in Sources */,
+				3F100EE91FD1926E00CA2B8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100EF51FD1926E00CA2B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F100EFE1FD1926E00CA2B8F /* DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F100F001FD1926E00CA2B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F100F091FD1926E00CA2B8F /* DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F7455F11FCD97760038A8A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F1147941FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift in Sources */,
 				3F7456051FCD97760038A8A6 /* CappriolaLoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +497,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F100EFB1FD1926E00CA2B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F100EE51FD1926E00CA2B8F /* Demo */;
+			targetProxy = 3F100EFA1FD1926E00CA2B8F /* PBXContainerItemProxy */;
+		};
+		3F100F061FD1926E00CA2B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F100EE51FD1926E00CA2B8F /* Demo */;
+			targetProxy = 3F100F051FD1926E00CA2B8F /* PBXContainerItemProxy */;
+		};
+		3F100F191FD1A41900CA2B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F7455F51FCD97760038A8A6 /* CappriolaLogin */;
+			targetProxy = 3F100F181FD1A41900CA2B8F /* PBXContainerItemProxy */;
+		};
 		3F7456021FCD97760038A8A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3F7455F51FCD97760038A8A6 /* CappriolaLogin */;
@@ -254,7 +519,124 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3F100EEC1FD1926E00CA2B8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F100EED1FD1926E00CA2B8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F100EF11FD1926E00CA2B8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F100EF21FD1926E00CA2B8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3F100F0B1FD1926E00CA2B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F100F0C1FD1926E00CA2B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F100F0D1FD1926E00CA2B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+			};
+			name = Debug;
+		};
+		3F100F0E1FD1926E00CA2B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+			};
+			name = Release;
+		};
+		3F100F0F1FD1926E00CA2B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Demo;
+			};
+			name = Debug;
+		};
+		3F100F101FD1926E00CA2B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDUR7X8MST;
+				INFOPLIST_FILE = DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.mobileapps.DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Demo;
+			};
+			name = Release;
+		};
 		3F7456081FCD97760038A8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -382,7 +764,7 @@
 				INFOPLIST_FILE = CappriolaLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.swift-converter.CappriolaLogin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.CappriolaLogin";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -405,7 +787,7 @@
 				INFOPLIST_FILE = CappriolaLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.swift-converter.CappriolaLogin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t-systems.CappriolaLogin";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -446,6 +828,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F100F111FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F100F0B1FD1926E00CA2B8F /* Debug */,
+				3F100F0C1FD1926E00CA2B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F100F121FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F100F0D1FD1926E00CA2B8F /* Debug */,
+				3F100F0E1FD1926E00CA2B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F100F131FD1926E00CA2B8F /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F100F0F1FD1926E00CA2B8F /* Debug */,
+				3F100F101FD1926E00CA2B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F7455F01FCD97760038A8A6 /* Build configuration list for PBXProject "CappriolaLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
