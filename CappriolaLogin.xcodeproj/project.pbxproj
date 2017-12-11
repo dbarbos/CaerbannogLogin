@@ -18,11 +18,15 @@
 		3F100F171FD1A41900CA2B8F /* CappriolaLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F1147941FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1147931FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift */; };
 		3F2347E91FCDA12900F53B20 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2347E81FCDA12900F53B20 /* Login.swift */; };
+		3F6652C91FD9D25A006E1950 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6652C71FD9D25A006E1950 /* KeychainConfiguration.swift */; };
+		3F6652CA1FD9D25A006E1950 /* KeychainTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6652C81FD9D25A006E1950 /* KeychainTokenItem.swift */; };
+		3F6652CC1FDAAC69006E1950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6652CB1FDAAC69006E1950 /* Constants.swift */; };
 		3F7456001FCD97760038A8A6 /* CappriolaLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */; };
 		3F7456051FCD97760038A8A6 /* CappriolaLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7456041FCD97760038A8A6 /* CappriolaLoginTests.swift */; };
 		3F7456071FCD97760038A8A6 /* CappriolaLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F7456111FCD97AC0038A8A6 /* CappriolaLogin.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */; };
 		3F7456131FCD9B840038A8A6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456121FCD9B840038A8A6 /* LICENSE */; };
+		3FC9A2921FDAF03900290A03 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9A2911FDAF03900290A03 /* Alerts.swift */; };
 		C8A561C41FCDE2F70010C85E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A561C21FCDE2F70010C85E /* LoginViewController.swift */; };
 		C8A561C51FCDE2F70010C85E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A561C31FCDE2F70010C85E /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
@@ -88,6 +92,9 @@
 		3F100F0A1FD1926E00CA2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1147931FD8CCAA00EE9EDE /* LoginViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		3F2347E81FCDA12900F53B20 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3F6652C71FD9D25A006E1950 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		3F6652C81FD9D25A006E1950 /* KeychainTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTokenItem.swift; sourceTree = "<group>"; };
+		3F6652CB1FDAAC69006E1950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F7455F61FCD97760038A8A6 /* CappriolaLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CappriolaLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CappriolaLogin.h; sourceTree = "<group>"; };
 		3F7455FA1FCD97760038A8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		3F7456061FCD97760038A8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CappriolaLogin.podspec; sourceTree = SOURCE_ROOT; };
 		3F7456121FCD9B840038A8A6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3FC9A2911FDAF03900290A03 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		C8A561C21FCDE2F70010C85E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A561C31FCDE2F70010C85E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +195,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3F6652C61FD9D245006E1950 /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				3F6652C71FD9D25A006E1950 /* KeychainConfiguration.swift */,
+				3F6652C81FD9D25A006E1950 /* KeychainTokenItem.swift */,
+			);
+			path = keychain;
+			sourceTree = "<group>";
+		};
 		3F7455EC1FCD97760038A8A6 = {
 			isa = PBXGroup;
 			children = (
@@ -215,12 +232,15 @@
 		3F7455F81FCD97760038A8A6 /* CappriolaLogin */ = {
 			isa = PBXGroup;
 			children = (
+				3F6652C61FD9D245006E1950 /* keychain */,
 				C8A561C11FCDE2450010C85E /* View */,
 				3F7456121FCD9B840038A8A6 /* LICENSE */,
 				3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */,
 				3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */,
+				3F6652CB1FDAAC69006E1950 /* Constants.swift */,
 				3F7455FA1FCD97760038A8A6 /* Info.plist */,
 				3F2ECB9C1FCDD2EB005BE1C1 /* Model */,
+				3FC9A2911FDAF03900290A03 /* Alerts.swift */,
 			);
 			path = CappriolaLogin;
 			sourceTree = "<group>";
@@ -480,8 +500,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6652CC1FDAAC69006E1950 /* Constants.swift in Sources */,
+				3F6652C91FD9D25A006E1950 /* KeychainConfiguration.swift in Sources */,
 				C8A561C41FCDE2F70010C85E /* LoginViewController.swift in Sources */,
 				3F2347E91FCDA12900F53B20 /* Login.swift in Sources */,
+				3FC9A2921FDAF03900290A03 /* Alerts.swift in Sources */,
+				3F6652CA1FD9D25A006E1950 /* KeychainTokenItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
