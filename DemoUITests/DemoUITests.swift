@@ -74,10 +74,10 @@ class DemoUITests: XCTestCase {
     
     func test004LoginSuceed() {
         XCUIApplication().textFields["UserIdTextField"].tap()
-        XCUIApplication().textFields["UserIdTextField"].typeText("dilerBarbosa")
+        XCUIApplication().textFields["UserIdTextField"].typeText("dijunior")
         
         XCUIApplication().secureTextFields["PasswordTextField"].tap()
-        XCUIApplication().secureTextFields["PasswordTextField"].typeText("password")
+        XCUIApplication().secureTextFields["PasswordTextField"].typeText("machine")
         
         XCUIApplication().buttons["LogInButton"].tap()
         

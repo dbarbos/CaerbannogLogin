@@ -33,4 +33,12 @@ public struct Alerts {
         
         return alert
     }
+    
+    public func accessDenied() -> UIAlertController {
+        
+        let alert = UIAlertController(title: "Access Denied", message: "Wrong userID or password!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
+        
+        return alert
+    }
 }
