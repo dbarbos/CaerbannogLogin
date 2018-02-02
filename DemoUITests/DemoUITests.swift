@@ -57,8 +57,8 @@ class DemoUITests: XCTestCase {
     }
     
     func test003PasswordTextFieldValidation() {
-        XCUIApplication().textFields["PasswordTextField"].tap()
-        XCUIApplication().textFields["PasswordTextField"].typeText("password")
+        XCUIApplication().secureTextFields["PasswordTextField"].tap()
+        XCUIApplication().secureTextFields["PasswordTextField"].typeText("password")
         
         XCUIApplication().buttons["LogInButton"].tap()
         
@@ -68,7 +68,7 @@ class DemoUITests: XCTestCase {
         
         XCTAssertFalse(XCUIApplication().alerts.element.staticTexts["Your user ID is missing"].exists)
         
-        XCUIApplication().textFields["PasswordTextField"].buttons["Clear text"].tap()
+        XCUIApplication().secureTextFields["PasswordTextField"].buttons["Clear text"].tap()
         
     }
     
@@ -76,8 +76,8 @@ class DemoUITests: XCTestCase {
         XCUIApplication().textFields["UserIdTextField"].tap()
         XCUIApplication().textFields["UserIdTextField"].typeText("dilerBarbosa")
         
-        XCUIApplication().textFields["PasswordTextField"].tap()
-        XCUIApplication().textFields["PasswordTextField"].typeText("password")
+        XCUIApplication().secureTextFields["PasswordTextField"].tap()
+        XCUIApplication().secureTextFields["PasswordTextField"].typeText("password")
         
         XCUIApplication().buttons["LogInButton"].tap()
         

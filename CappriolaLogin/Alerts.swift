@@ -25,4 +25,12 @@ public struct Alerts {
         
         return alert
     }
+    
+    public func noNetworkDetected() -> UIAlertController {
+        
+        let alert = UIAlertController(title: "Network Fail", message: "Please check your network settings!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
+        
+        return alert
+    }
 }

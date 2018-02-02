@@ -22,7 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
-        self.window?.rootViewController = LoginViewController(whereNextViewControllerIs: initialViewController)
+        
+//        self.window?.rootViewController = LoginViewController(whereNextViewControllerIs: initialViewController,
+//                                                              requestAccessTokenURL: "http://request.com.br",
+//                                                              validateAccessTokenURL: "http://validate.com.br",
+//                                                              nibName: "CustomLoginView",
+//                                                              bundle: Bundle(for: AppDelegate.self))
+        
+        let loginController = LoginViewController(whereNextViewControllerIs: initialViewController, requestAccessTokenURL: "URL:Request", validateAccessTokenURL: "URLRequest")
+        
+        self.window?.rootViewController = loginController
+        
         self.window?.makeKeyAndVisible()
         
         return true

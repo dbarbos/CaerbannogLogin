@@ -26,7 +26,12 @@
 		3F7456071FCD97760038A8A6 /* CappriolaLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F7456111FCD97AC0038A8A6 /* CappriolaLogin.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */; };
 		3F7456131FCD9B840038A8A6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F7456121FCD9B840038A8A6 /* LICENSE */; };
+		3F8DCD6C2023415600F842D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8DCD6B2023415600F842D0 /* Assets.xcassets */; };
 		3FC9A2921FDAF03900290A03 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9A2911FDAF03900290A03 /* Alerts.swift */; };
+		3FC9F91F202495F80090490B /* CappriolaReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9F91E202495F80090490B /* CappriolaReachability.swift */; };
+		3FC9F927202499B20090490B /* CappriolaHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9F921202499B20090490B /* CappriolaHTTPRequest.swift */; };
+		3FC9F92A202499B20090490B /* CappriolaRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9F924202499B20090490B /* CappriolaRequestHelper.swift */; };
+		3FFF9103201B8FB800DC030F /* CustomLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF9102201B8FB800DC030F /* CustomLoginView.xib */; };
 		C8A561C41FCDE2F70010C85E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A561C21FCDE2F70010C85E /* LoginViewController.swift */; };
 		C8A561C51FCDE2F70010C85E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8A561C31FCDE2F70010C85E /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
@@ -103,7 +108,12 @@
 		3F7456061FCD97760038A8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CappriolaLogin.podspec; sourceTree = SOURCE_ROOT; };
 		3F7456121FCD9B840038A8A6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3F8DCD6B2023415600F842D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC9A2911FDAF03900290A03 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		3FC9F91E202495F80090490B /* CappriolaReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappriolaReachability.swift; sourceTree = "<group>"; };
+		3FC9F921202499B20090490B /* CappriolaHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaHTTPRequest.swift; sourceTree = "<group>"; };
+		3FC9F924202499B20090490B /* CappriolaRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaRequestHelper.swift; sourceTree = "<group>"; };
+		3FFF9102201B8FB800DC030F /* CustomLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLoginView.xib; sourceTree = "<group>"; };
 		C8A561C21FCDE2F70010C85E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A561C31FCDE2F70010C85E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +168,7 @@
 				3F100EEF1FD1926E00CA2B8F /* Assets.xcassets */,
 				3F100EF11FD1926E00CA2B8F /* LaunchScreen.storyboard */,
 				3F100EF41FD1926E00CA2B8F /* Info.plist */,
+				3FFF9102201B8FB800DC030F /* CustomLoginView.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -232,15 +243,18 @@
 		3F7455F81FCD97760038A8A6 /* CappriolaLogin */ = {
 			isa = PBXGroup;
 			children = (
+				3FC9F920202499A50090490B /* Connection */,
 				3F6652C61FD9D245006E1950 /* keychain */,
 				C8A561C11FCDE2450010C85E /* View */,
 				3F7456121FCD9B840038A8A6 /* LICENSE */,
 				3F7456101FCD97AC0038A8A6 /* CappriolaLogin.podspec */,
 				3F7455F91FCD97760038A8A6 /* CappriolaLogin.h */,
+				3FC9F91E202495F80090490B /* CappriolaReachability.swift */,
 				3F6652CB1FDAAC69006E1950 /* Constants.swift */,
 				3F7455FA1FCD97760038A8A6 /* Info.plist */,
 				3F2ECB9C1FCDD2EB005BE1C1 /* Model */,
 				3FC9A2911FDAF03900290A03 /* Alerts.swift */,
+				3F8DCD6B2023415600F842D0 /* Assets.xcassets */,
 			);
 			path = CappriolaLogin;
 			sourceTree = "<group>";
@@ -253,6 +267,15 @@
 				3F7456061FCD97760038A8A6 /* Info.plist */,
 			);
 			path = CappriolaLoginTests;
+			sourceTree = "<group>";
+		};
+		3FC9F920202499A50090490B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				3FC9F921202499B20090490B /* CappriolaHTTPRequest.swift */,
+				3FC9F924202499B20090490B /* CappriolaRequestHelper.swift */,
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 		C8A561C11FCDE2450010C85E /* View */ = {
@@ -434,6 +457,7 @@
 				3F100EF31FD1926E00CA2B8F /* LaunchScreen.storyboard in Resources */,
 				3F100EF01FD1926E00CA2B8F /* Assets.xcassets in Resources */,
 				3F100EEE1FD1926E00CA2B8F /* Main.storyboard in Resources */,
+				3FFF9103201B8FB800DC030F /* CustomLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +482,7 @@
 				3F7456131FCD9B840038A8A6 /* LICENSE in Resources */,
 				3F7456111FCD97AC0038A8A6 /* CappriolaLogin.podspec in Resources */,
 				C8A561C51FCDE2F70010C85E /* LoginViewController.xib in Resources */,
+				3F8DCD6C2023415600F842D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +525,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC9F91F202495F80090490B /* CappriolaReachability.swift in Sources */,
+				3FC9F927202499B20090490B /* CappriolaHTTPRequest.swift in Sources */,
+				3FC9F92A202499B20090490B /* CappriolaRequestHelper.swift in Sources */,
 				3F6652CC1FDAAC69006E1950 /* Constants.swift in Sources */,
 				3F6652C91FD9D25A006E1950 /* KeychainConfiguration.swift in Sources */,
 				C8A561C41FCDE2F70010C85E /* LoginViewController.swift in Sources */,
