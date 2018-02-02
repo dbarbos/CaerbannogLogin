@@ -11,11 +11,18 @@ import XCTest
 
 class CappriolaLoginTests: XCTestCase {
     
-    func testDeSelecaoDeMetodo() {
+    func testDeSelecaoDeMetodoGET() {
         let login = Login(method: .GET)
         
         XCTAssertEqual(login.method, .GET)
         XCTAssertEqual(login.method.rawValue, "get")
+    }
+    
+    func testDeSelecaoDeMetodoPOST() {
+        let login = Login(method: .POST)
+        
+        XCTAssertEqual(login.method, .POST)
+        XCTAssertEqual(login.method.rawValue, "post")
     }
 
 }
