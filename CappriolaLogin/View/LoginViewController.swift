@@ -70,6 +70,8 @@ public class LoginViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        hideKeyboardWhenTappedAround()
+        
         cappriolaRequestHelper.delegate = self
         
         userIdField.delegate = self
@@ -82,7 +84,7 @@ public class LoginViewController: UIViewController {
         
         regularLoginButton = loginButton
         
-        _ = hasToken()
+        //_ = hasToken()
         
     }
     
@@ -172,6 +174,7 @@ public class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPress() {
         
+       
         if self.loginFieldsAreValid(userIdField: userIdField,passwordField: passwordField) && self.canPresentNextView() {
             
             
@@ -314,8 +317,23 @@ extension LoginViewController : CappriolaRequestHelperDelegate {
     }
     
     func requestFail(message: String, requestType: RequestType) {
-        animateLoginbutton()
-        print("fail")
+        
+        self.animateLoginbutton()
+        
+        self.present(Alerts().accessDenied(), animated: true, completion: nil)
+        
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 
