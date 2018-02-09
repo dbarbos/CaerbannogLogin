@@ -81,6 +81,8 @@ class DemoUITests: XCTestCase {
         
         XCUIApplication().buttons["LogInButton"].tap()
         
+        sleep(3)
+        
         XCTAssertTrue(XCUIApplication().staticTexts["Welcome"].exists)
     }
     
