@@ -70,7 +70,7 @@ public class LoginViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        hideKeyboardWhenTappedAround()
+        //hideKeyboardWhenTappedAround()
         
         cappriolaRequestHelper.delegate = self
         
@@ -176,6 +176,9 @@ public class LoginViewController: UIViewController {
         
        
         if self.loginFieldsAreValid(userIdField: userIdField,passwordField: passwordField) && self.canPresentNextView() {
+            
+            userIdField.resignFirstResponder()
+            passwordField.resignFirstResponder()
             
             
             
