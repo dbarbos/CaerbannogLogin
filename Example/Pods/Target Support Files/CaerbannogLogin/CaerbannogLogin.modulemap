@@ -1,0 +1,6 @@
+framework module CaerbannogLogin {
+  umbrella header "CaerbannogLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

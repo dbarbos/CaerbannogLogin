@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0447E1627EC5161FAFD5318122FFAC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2B66032173AB308E635EE99E70987C7B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C0C6452B03FB54595D20FA4EA4FA5B /* ReplaceMe.swift */; };
+		3517FB2A709BA0E100BA4E94882C4134 /* Pods-CaerbannogLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB1FEB035BE035508B84AAFE137EB07 /* Pods-CaerbannogLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45219F5D5C1F9AA226FA6354DEC1CB5F /* Pods-CaerbannogLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 958B761A7320F1255F350B26C20ADCBA /* Pods-CaerbannogLogin_Example-dummy.m */; };
+		4BAF6FC0949C254B52018E3D74A3E2D4 /* CaerbannogLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CE3B05DCBF54988F46399C2CFA1AF94 /* CaerbannogLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B887E5B0C00F6C03790DC2BB828D787 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AC929F0274803AFB3DAB946613DBE7AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AEBC5BEFE7E84D011E8A8D29286D5C67 /* Pods-CaerbannogLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0497801D49C249CE7ACB5C39549C926B /* Pods-CaerbannogLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD92119E20585374000E6A35 /* LoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = CD92119D205852FA000E6A35 /* LoginViewController.xib */; };
+		CD92119F20585392000E6A35 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1A20584AD4002D3157 /* Assets.xcassets */; };
+		CDA37C0D20584AAC002D3157 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0120584AAB002D3157 /* LoginViewController.swift */; };
+		CDA37C0F20584AAC002D3157 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */; };
+		CDA37C1020584AAC002D3157 /* KeychainTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */; };
+		CDA37C1120584AAC002D3157 /* CappriolaRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0720584AAB002D3157 /* CappriolaRequestHelper.swift */; };
+		CDA37C1220584AAC002D3157 /* CappriolaHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0820584AAB002D3157 /* CappriolaHTTPRequest.swift */; };
+		CDA37C1C20584AD4002D3157 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1520584AD3002D3157 /* Alerts.swift */; };
+		CDA37C1D20584AD4002D3157 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1720584AD3002D3157 /* Login.swift */; };
+		CDA37C1F20584AD4002D3157 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1920584AD3002D3157 /* Constants.swift */; };
+		CDA37C2020584AD4002D3157 /* CappriolaReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1B20584AD4002D3157 /* CappriolaReachability.swift */; };
+		D1329095C478399314ECB1D424C891EC /* Pods-CaerbannogLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8822E06FF55A09F9C67715647DF24B /* Pods-CaerbannogLogin_Tests-dummy.m */; };
+		EBA34BAD080B56BA13E4F2420E013D11 /* CaerbannogLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFEEA9C57607EBDDA9882E61149E0E4 /* CaerbannogLogin-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8E9F5D15A5656F286A6AE60DF4F1B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04824C343B104D91D26EF3080AB36543;
+			remoteInfo = CaerbannogLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031158E8E0149DC7D2783AD28E4970B5 /* Pods-CaerbannogLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaerbannogLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0497801D49C249CE7ACB5C39549C926B /* Pods-CaerbannogLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CaerbannogLogin_Example-umbrella.h"; sourceTree = "<group>"; };
+		08344E74A0F173FF6CF16BA3D067353E /* Pods-CaerbannogLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaerbannogLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0BFC5FA626E8885A06C69E7D3C7FEE1B /* CaerbannogLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CaerbannogLogin-prefix.pch"; sourceTree = "<group>"; };
+		1EA2B99BCBB83C6BA761F8BEF7F26614 /* Pods-CaerbannogLogin_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaerbannogLogin_Example-resources.sh"; sourceTree = "<group>"; };
+		20453C46AB09C2925CF36043CF7CBC28 /* CaerbannogLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CaerbannogLogin.modulemap; sourceTree = "<group>"; };
+		30D74563944A6B8BC623004E3AC211D7 /* Pods-CaerbannogLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaerbannogLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		30F02839341CF764AA0481B5CD453BAE /* Pods-CaerbannogLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaerbannogLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37695E5CB21E8AAEC568ADC5787C42D4 /* Pods-CaerbannogLogin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CaerbannogLogin_Tests.modulemap"; sourceTree = "<group>"; };
+		3A74403C42A49328A0517D02EF81A401 /* Pods-CaerbannogLogin_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaerbannogLogin_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3D6B9101B3DFA29E7B7E4A31EE399C67 /* Pods-CaerbannogLogin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CaerbannogLogin_Example.modulemap"; sourceTree = "<group>"; };
+		49AF6C77E27DEDEE585FD8F86D78D2D6 /* CaerbannogLogin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CaerbannogLogin.xcconfig; sourceTree = "<group>"; };
+		4B206455EFDCA00334D16A7EAA1FE11F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE3B05DCBF54988F46399C2CFA1AF94 /* CaerbannogLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CaerbannogLogin-umbrella.h"; sourceTree = "<group>"; };
+		4E8822E06FF55A09F9C67715647DF24B /* Pods-CaerbannogLogin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaerbannogLogin_Tests-dummy.m"; sourceTree = "<group>"; };
+		50E443AD9DD5EEEDD2F6B7D72E1D8109 /* Pods_CaerbannogLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaerbannogLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5112D45B5FFA28D1659E22EFE6B3A2B6 /* Pods-CaerbannogLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaerbannogLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		54DEBD3786F2AFB53CFDD037E3A90F09 /* Pods-CaerbannogLogin_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaerbannogLogin_Tests-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DFEEA9C57607EBDDA9882E61149E0E4 /* CaerbannogLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CaerbannogLogin-dummy.m"; sourceTree = "<group>"; };
+		6E0E2348F540AB9D19505D030D9F4DDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DECE1CDF37F2C98CE051617CA64536 /* CaerbannogLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaerbannogLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5AE981E68330178161CEFAED928372 /* Pods_CaerbannogLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaerbannogLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB1FEB035BE035508B84AAFE137EB07 /* Pods-CaerbannogLogin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CaerbannogLogin_Tests-umbrella.h"; sourceTree = "<group>"; };
+		92909708AC17B53362EFCC7DCFACF851 /* Pods-CaerbannogLogin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CaerbannogLogin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92A11C2EAD85A3179745561F96A3E4BA /* Pods-CaerbannogLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CaerbannogLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958B761A7320F1255F350B26C20ADCBA /* Pods-CaerbannogLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CaerbannogLogin_Example-dummy.m"; sourceTree = "<group>"; };
+		AB5ADA690E1F8E0E1EFEC1F4BE199C65 /* Pods-CaerbannogLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CaerbannogLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CAC03F427ED746951732A15D7D7A1751 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD92119D205852FA000E6A35 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CDA37C0120584AAB002D3157 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTokenItem.swift; sourceTree = "<group>"; };
+		CDA37C0720584AAB002D3157 /* CappriolaRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaRequestHelper.swift; sourceTree = "<group>"; };
+		CDA37C0820584AAB002D3157 /* CappriolaHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaHTTPRequest.swift; sourceTree = "<group>"; };
+		CDA37C1520584AD3002D3157 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		CDA37C1720584AD3002D3157 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		CDA37C1920584AD3002D3157 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CDA37C1A20584AD4002D3157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDA37C1B20584AD4002D3157 /* CappriolaReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaReachability.swift; sourceTree = "<group>"; };
+		D4C0C6452B03FB54595D20FA4EA4FA5B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CaerbannogLogin/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		E3071ED29622B5FD7854113DDA40E14C /* Pods-CaerbannogLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaerbannogLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5929FF7889E86B8B3F9864C4DFE57D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0447E1627EC5161FAFD5318122FFAC2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1753371C6C71E1FFD75209356A8749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B887E5B0C00F6C03790DC2BB828D787 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6482AF4F1DCB5562EDD25B8F7116EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC929F0274803AFB3DAB946613DBE7AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E9FB28594E37A7507BD094461135DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4813D7373CF285227C225478A29024E5 /* Pods-CaerbannogLogin_Example */,
+				BC5CA7FB4CA19D4CFB91EAA78F9E2A3F /* Pods-CaerbannogLogin_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20453C46AB09C2925CF36043CF7CBC28 /* CaerbannogLogin.modulemap */,
+				49AF6C77E27DEDEE585FD8F86D78D2D6 /* CaerbannogLogin.xcconfig */,
+				6DFEEA9C57607EBDDA9882E61149E0E4 /* CaerbannogLogin-dummy.m */,
+				0BFC5FA626E8885A06C69E7D3C7FEE1B /* CaerbannogLogin-prefix.pch */,
+				4CE3B05DCBF54988F46399C2CFA1AF94 /* CaerbannogLogin-umbrella.h */,
+				CAC03F427ED746951732A15D7D7A1751 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CaerbannogLogin";
+			sourceTree = "<group>";
+		};
+		4813D7373CF285227C225478A29024E5 /* Pods-CaerbannogLogin_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4B206455EFDCA00334D16A7EAA1FE11F /* Info.plist */,
+				3D6B9101B3DFA29E7B7E4A31EE399C67 /* Pods-CaerbannogLogin_Example.modulemap */,
+				30F02839341CF764AA0481B5CD453BAE /* Pods-CaerbannogLogin_Example-acknowledgements.markdown */,
+				5112D45B5FFA28D1659E22EFE6B3A2B6 /* Pods-CaerbannogLogin_Example-acknowledgements.plist */,
+				958B761A7320F1255F350B26C20ADCBA /* Pods-CaerbannogLogin_Example-dummy.m */,
+				AB5ADA690E1F8E0E1EFEC1F4BE199C65 /* Pods-CaerbannogLogin_Example-frameworks.sh */,
+				1EA2B99BCBB83C6BA761F8BEF7F26614 /* Pods-CaerbannogLogin_Example-resources.sh */,
+				0497801D49C249CE7ACB5C39549C926B /* Pods-CaerbannogLogin_Example-umbrella.h */,
+				92A11C2EAD85A3179745561F96A3E4BA /* Pods-CaerbannogLogin_Example.debug.xcconfig */,
+				08344E74A0F173FF6CF16BA3D067353E /* Pods-CaerbannogLogin_Example.release.xcconfig */,
+			);
+			name = "Pods-CaerbannogLogin_Example";
+			path = "Target Support Files/Pods-CaerbannogLogin_Example";
+			sourceTree = "<group>";
+		};
+		4CA8401B0218179070080C350B67077C /* CaerbannogLogin */ = {
+			isa = PBXGroup;
+			children = (
+				CDA37C0620584AAB002D3157 /* Connection */,
+				CDA37C0320584AAB002D3157 /* keychain */,
+				CDA37BFF20584AAB002D3157 /* View */,
+				D4C0C6452B03FB54595D20FA4EA4FA5B /* ReplaceMe.swift */,
+				CDA37C1520584AD3002D3157 /* Alerts.swift */,
+				CDA37C1A20584AD4002D3157 /* Assets.xcassets */,
+				CDA37C1B20584AD4002D3157 /* CappriolaReachability.swift */,
+				CDA37C1920584AD3002D3157 /* Constants.swift */,
+				CDA37C1620584AD3002D3157 /* Model */,
+				1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */,
+			);
+			name = CaerbannogLogin;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		62509F22DF9E0958702075C93D05E0CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89DECE1CDF37F2C98CE051617CA64536 /* CaerbannogLogin.framework */,
+				8B5AE981E68330178161CEFAED928372 /* Pods_CaerbannogLogin_Example.framework */,
+				50E443AD9DD5EEEDD2F6B7D72E1D8109 /* Pods_CaerbannogLogin_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F3832CED0F2D60FB8A91DA83BC2D7590 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				62509F22DF9E0958702075C93D05E0CD /* Products */,
+				11E9FB28594E37A7507BD094461135DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5CA7FB4CA19D4CFB91EAA78F9E2A3F /* Pods-CaerbannogLogin_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0E2348F540AB9D19505D030D9F4DDF /* Info.plist */,
+				37695E5CB21E8AAEC568ADC5787C42D4 /* Pods-CaerbannogLogin_Tests.modulemap */,
+				92909708AC17B53362EFCC7DCFACF851 /* Pods-CaerbannogLogin_Tests-acknowledgements.markdown */,
+				E3071ED29622B5FD7854113DDA40E14C /* Pods-CaerbannogLogin_Tests-acknowledgements.plist */,
+				4E8822E06FF55A09F9C67715647DF24B /* Pods-CaerbannogLogin_Tests-dummy.m */,
+				3A74403C42A49328A0517D02EF81A401 /* Pods-CaerbannogLogin_Tests-frameworks.sh */,
+				54DEBD3786F2AFB53CFDD037E3A90F09 /* Pods-CaerbannogLogin_Tests-resources.sh */,
+				8DB1FEB035BE035508B84AAFE137EB07 /* Pods-CaerbannogLogin_Tests-umbrella.h */,
+				031158E8E0149DC7D2783AD28E4970B5 /* Pods-CaerbannogLogin_Tests.debug.xcconfig */,
+				30D74563944A6B8BC623004E3AC211D7 /* Pods-CaerbannogLogin_Tests.release.xcconfig */,
+			);
+			name = "Pods-CaerbannogLogin_Tests";
+			path = "Target Support Files/Pods-CaerbannogLogin_Tests";
+			sourceTree = "<group>";
+		};
+		CDA37BFF20584AAB002D3157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD92119D205852FA000E6A35 /* LoginViewController.xib */,
+				CDA37C0120584AAB002D3157 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDA37C0320584AAB002D3157 /* keychain */ = {
+			isa = PBXGroup;
+			children = (
+				CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */,
+				CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */,
+			);
+			path = keychain;
+			sourceTree = "<group>";
+		};
+		CDA37C0620584AAB002D3157 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				CDA37C0720584AAB002D3157 /* CappriolaRequestHelper.swift */,
+				CDA37C0820584AAB002D3157 /* CappriolaHTTPRequest.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		CDA37C1620584AD3002D3157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDA37C1720584AD3002D3157 /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F3832CED0F2D60FB8A91DA83BC2D7590 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8401B0218179070080C350B67077C /* CaerbannogLogin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73ACD23F3244C773EA70D3A40D20D936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3517FB2A709BA0E100BA4E94882C4134 /* Pods-CaerbannogLogin_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B59BBD5FF0AB0B3C9B3491E0EB5B274 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAF6FC0949C254B52018E3D74A3E2D4 /* CaerbannogLogin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9061D99DFDD097309EAEEEBB306ADB44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBC5BEFE7E84D011E8A8D29286D5C67 /* Pods-CaerbannogLogin_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04824C343B104D91D26EF3080AB36543 /* CaerbannogLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FEB96BD07AA8E57D01CB321CB4DAA27 /* Build configuration list for PBXNativeTarget "CaerbannogLogin" */;
+			buildPhases = (
+				44C3B2E2C1AA438AFB9297E1114167D8 /* Sources */,
+				D6482AF4F1DCB5562EDD25B8F7116EBB /* Frameworks */,
+				8B59BBD5FF0AB0B3C9B3491E0EB5B274 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaerbannogLogin;
+			productName = CaerbannogLogin;
+			productReference = 89DECE1CDF37F2C98CE051617CA64536 /* CaerbannogLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		59183467E0FA33AD67508D19C8457804 /* Pods-CaerbannogLogin_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C7D80009D97706856C03174DE7A4CC /* Build configuration list for PBXNativeTarget "Pods-CaerbannogLogin_Example" */;
+			buildPhases = (
+				85F643CD9CD262C7912609F04E17B77B /* Sources */,
+				6B1753371C6C71E1FFD75209356A8749 /* Frameworks */,
+				9061D99DFDD097309EAEEEBB306ADB44 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956788C9DF087FFD770DCDC57ADA4CC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CaerbannogLogin_Example";
+			productName = "Pods-CaerbannogLogin_Example";
+			productReference = 8B5AE981E68330178161CEFAED928372 /* Pods_CaerbannogLogin_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A87E5F1A4BD3675F7531B3408D90D9FB /* Pods-CaerbannogLogin_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391CCD9C37679F6155F31161AE1F72B0 /* Build configuration list for PBXNativeTarget "Pods-CaerbannogLogin_Tests" */;
+			buildPhases = (
+				7BB8497D76C038118651BCB7D6E8828D /* Sources */,
+				5929FF7889E86B8B3F9864C4DFE57D0F /* Frameworks */,
+				73ACD23F3244C773EA70D3A40D20D936 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CaerbannogLogin_Tests";
+			productName = "Pods-CaerbannogLogin_Tests";
+			productReference = 50E443AD9DD5EEEDD2F6B7D72E1D8109 /* Pods_CaerbannogLogin_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 62509F22DF9E0958702075C93D05E0CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04824C343B104D91D26EF3080AB36543 /* CaerbannogLogin */,
+				59183467E0FA33AD67508D19C8457804 /* Pods-CaerbannogLogin_Example */,
+				A87E5F1A4BD3675F7531B3408D90D9FB /* Pods-CaerbannogLogin_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44C3B2E2C1AA438AFB9297E1114167D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD92119F20585392000E6A35 /* Assets.xcassets in Sources */,
+				CD92119E20585374000E6A35 /* LoginViewController.xib in Sources */,
+				CDA37C2020584AD4002D3157 /* CappriolaReachability.swift in Sources */,
+				EBA34BAD080B56BA13E4F2420E013D11 /* CaerbannogLogin-dummy.m in Sources */,
+				CDA37C1220584AAC002D3157 /* CappriolaHTTPRequest.swift in Sources */,
+				CDA37C1F20584AD4002D3157 /* Constants.swift in Sources */,
+				CDA37C1D20584AD4002D3157 /* Login.swift in Sources */,
+				CDA37C1120584AAC002D3157 /* CappriolaRequestHelper.swift in Sources */,
+				CDA37C1C20584AD4002D3157 /* Alerts.swift in Sources */,
+				CDA37C0D20584AAC002D3157 /* LoginViewController.swift in Sources */,
+				CDA37C0F20584AAC002D3157 /* KeychainConfiguration.swift in Sources */,
+				CDA37C1020584AAC002D3157 /* KeychainTokenItem.swift in Sources */,
+				2B66032173AB308E635EE99E70987C7B /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB8497D76C038118651BCB7D6E8828D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1329095C478399314ECB1D424C891EC /* Pods-CaerbannogLogin_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85F643CD9CD262C7912609F04E17B77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45219F5D5C1F9AA226FA6354DEC1CB5F /* Pods-CaerbannogLogin_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		956788C9DF087FFD770DCDC57ADA4CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CaerbannogLogin;
+			target = 04824C343B104D91D26EF3080AB36543 /* CaerbannogLogin */;
+			targetProxy = C8E9F5D15A5656F286A6AE60DF4F1B5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		431474525261800B1B490C09B2EB66AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031158E8E0149DC7D2783AD28E4970B5 /* Pods-CaerbannogLogin_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CaerbannogLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaerbannogLogin_Tests/Pods-CaerbannogLogin_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CaerbannogLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		691BB12EDF608518ACBF29288EEBD6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AF6C77E27DEDEE585FD8F86D78D2D6 /* CaerbannogLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CaerbannogLogin/CaerbannogLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CaerbannogLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CaerbannogLogin/CaerbannogLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CaerbannogLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		698C20416185F94753EA2EE642C629AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AF6C77E27DEDEE585FD8F86D78D2D6 /* CaerbannogLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CaerbannogLogin/CaerbannogLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CaerbannogLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CaerbannogLogin/CaerbannogLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CaerbannogLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9309D63AF9D66E31A03DDCE4BC0EA9F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A11C2EAD85A3179745561F96A3E4BA /* Pods-CaerbannogLogin_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CaerbannogLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaerbannogLogin_Example/Pods-CaerbannogLogin_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CaerbannogLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1359961F4295806C320FBD51FC97BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08344E74A0F173FF6CF16BA3D067353E /* Pods-CaerbannogLogin_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CaerbannogLogin_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaerbannogLogin_Example/Pods-CaerbannogLogin_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CaerbannogLogin_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FDF5B6103D430BC2383DE219D1CFCA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D74563944A6B8BC623004E3AC211D7 /* Pods-CaerbannogLogin_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CaerbannogLogin_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CaerbannogLogin_Tests/Pods-CaerbannogLogin_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CaerbannogLogin_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391CCD9C37679F6155F31161AE1F72B0 /* Build configuration list for PBXNativeTarget "Pods-CaerbannogLogin_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431474525261800B1B490C09B2EB66AD /* Debug */,
+				FDF5B6103D430BC2383DE219D1CFCA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FEB96BD07AA8E57D01CB321CB4DAA27 /* Build configuration list for PBXNativeTarget "CaerbannogLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691BB12EDF608518ACBF29288EEBD6FF /* Debug */,
+				698C20416185F94753EA2EE642C629AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C7D80009D97706856C03174DE7A4CC /* Build configuration list for PBXNativeTarget "Pods-CaerbannogLogin_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9309D63AF9D66E31A03DDCE4BC0EA9F1 /* Debug */,
+				E1359961F4295806C320FBD51FC97BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

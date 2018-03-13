@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CaerbannogLogin_Example' do
+  pod 'CaerbannogLogin', :path => '../'
+
+  target 'CaerbannogLogin_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
