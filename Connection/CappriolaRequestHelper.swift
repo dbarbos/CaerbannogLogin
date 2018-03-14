@@ -11,7 +11,7 @@ import Foundation
 
 protocol CappriolaRequestHelperDelegate {
     func requestSuccess(message: String, requestType: RequestType, data: Data)
-    func requestFail(message: String, requestType: RequestType)
+    func requestFail(message: CappriolaError, requestType: RequestType)
 }
 
 enum RequestType: String {
@@ -51,6 +51,7 @@ class CappriolaRequestHelper: NSObject {
         }, error: { (message, response) -> () in
             //code
             print("ERRO PEGO DE FORMA CORRETA")
+            
             self.delegate?.requestFail(message: message, requestType: .RequestToken)
             
         }) {
@@ -62,8 +63,6 @@ class CappriolaRequestHelper: NSObject {
     }
     
 }
-
-
 
 extension Dictionary where Key == String, Value == String {
     func asHttpBody() -> String {

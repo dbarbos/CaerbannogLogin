@@ -4,18 +4,22 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="CappriolaLogin" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="CaerbannogLogin" customModuleProvider="target">
             <connections>
                 <outlet property="activityView" destination="AmC-SL-oXv" id="kRv-fN-zgc"/>
                 <outlet property="backgroundImage" destination="lkX-LM-4Gv" id="1Tx-k4-loj"/>
+                <outlet property="lineLogin" destination="wd9-hE-Ylp" id="P2D-0f-izZ"/>
+                <outlet property="linePassword" destination="Rj7-qa-NkW" id="lin-Wd-lj7"/>
                 <outlet property="loginButton" destination="Iig-iN-HZm" id="mXd-HC-cph"/>
+                <outlet property="logoImage" destination="U0g-fN-sHW" id="7NM-Ls-ZvB"/>
                 <outlet property="passwordField" destination="5uo-pD-CXd" id="UbK-P8-wcN"/>
+                <outlet property="passwordIcon" destination="RNC-tz-ZfW" id="0UH-cp-a9D"/>
+                <outlet property="userIcon" destination="kDF-bn-nKb" id="4sv-Ta-Zn8"/>
                 <outlet property="userIdField" destination="nCs-l7-d7P" id="5zv-vx-3A6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

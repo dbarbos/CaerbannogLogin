@@ -17,22 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
         
-        //        self.window?.rootViewController = LoginViewController(whereNextViewControllerIs: initialViewController,
-        //                                                              requestAccessTokenURL: "http://request.com.br",
-        //                                                              validateAccessTokenURL: "http://validate.com.br",
-        //                                                              nibName: "CustomLoginView",
-        //                                                              bundle: Bundle(for: AppDelegate.self))
         
-        let loginController = LoginViewController(whereNextViewControllerIs: initialViewController, requestAccessTokenURL: "URL:Request", validateAccessTokenURL: "URLRequest")
         
-        self.window?.rootViewController = loginController
+        let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "http://localhost:8080/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "6tw1rqMR6my36cWf2GAHcLnFi1UAgsn3A0Kpd4f7")
+        let loginController = LoginViewController(whereNextViewControllerIs: initialViewController, connection: connection)
         
-        self.window?.makeKeyAndVisible()
+        let layout = AdvancedLayout()
+        
+        layout.button.backgroundColor = UIColor.red
+        layout.line1.color = UIColor.blue
+        layout.button.cornerRadius = 2
+        
+        loginController.layout = .Advanced(layout: layout)
+        
+        loginController.showController()
+        
         
         return true
     }

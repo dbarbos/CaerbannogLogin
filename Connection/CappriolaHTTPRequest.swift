@@ -8,24 +8,26 @@
 
 import Foundation
 
+public enum CappriolaError: String, Error {
+    case unauthorized = "Provided Login or Passcode is not valid"
+    case unexpectedFailure = "The server has returned an unexpected status message"
+    case offline = "No Internet connection"
+    case methodNotAllowed = "Status 405 Method not allowed"
+    case badRequest = "Status 400 Bad Request"
+    case badResponse = "Bad response from server!"
+    case TransportSecurity = "Your transport security key in plist is not configured"
+    case NoData = "Server is not responding! Please, try again later or check your settings."
+    case ConversionFailed = "Error: conversion from JSON failed"
+    case Default = ""
+}
+
 class CappriolaHTTPRequest: NSObject, NSURLConnectionDelegate, URLSessionDelegate {
     
     
     let sessionConfiguration = URLSessionConfiguration.default
     var session = URLSession()
     
-    
-    enum CappriolaError: String, Error {
-        case unauthorized = "Provided Login or Passcode is not valid"
-        case unexpectedFailure = "The server has returned an unexpected status message"
-        case offline = "No Internet connection"
-        case methodNotAllowed = "Status 405 Method not allowed"
-        case badRequest = "Status 400 Bad Request"
-        case badResponse = "Bad response from server!"
-        case NoData = "Server is not responding! Please, try again later or check your settings."
-        case ConversionFailed = "Error: conversion from JSON failed"
-    }
-    
+
     static func setRequest(url: String, httpHeader : [String:String]?, httpBody : String, httpMethod: String) -> URLRequest {
         
         var request = URLRequest(url: URL(string: url)!)
@@ -67,7 +69,7 @@ class CappriolaHTTPRequest: NSObject, NSURLConnectionDelegate, URLSessionDelegat
     }
     
     
-    func getData(request: URLRequest, success: @escaping (HTTPURLResponse?, Data) -> (), error: @escaping (_ message: String, HTTPURLResponse?) -> (), completion: @escaping () -> ()) {
+    func getData(request: URLRequest, success: @escaping (HTTPURLResponse?, Data) -> (), error: @escaping (_ message: CappriolaError, HTTPURLResponse?) -> (), completion: @escaping () -> ()) {
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -94,22 +96,33 @@ class CappriolaHTTPRequest: NSObject, NSURLConnectionDelegate, URLSessionDelegat
                         success(response as! HTTPURLResponse?, data! as Data)
                         break
                     case 400 :
-                        error(CappriolaError.badRequest.rawValue, response as! HTTPURLResponse?)
+                        error(CappriolaError.badRequest, response as! HTTPURLResponse?)
                         break
                     case 405 :
-                        error(CappriolaError.methodNotAllowed.rawValue, response as! HTTPURLResponse?)
+                        error(CappriolaError.methodNotAllowed, response as! HTTPURLResponse?)
                         break
                     case 401 :
-                        error(CappriolaError.unauthorized.rawValue, response as! HTTPURLResponse?)
+                        error(CappriolaError.unauthorized, response as! HTTPURLResponse?)
                         break
                     default :
-                        error(CappriolaError.unexpectedFailure.rawValue, response as! HTTPURLResponse?)
+                        error(CappriolaError.unexpectedFailure, response as! HTTPURLResponse?)
                         break
                     }
                     
                 }
                 else {
-                    error(CappriolaError.offline.rawValue, nil)
+                    if let err = erro {
+                        let description = err.localizedDescription
+                        if (description.lowercased().range(of: "app transport security") != nil) {
+                            error(CappriolaError.TransportSecurity, nil)
+                        } else {
+                            error(CappriolaError.offline, nil)
+                        }
+                    } else {
+                        error(CappriolaError.offline, nil)
+                    }
+                    
+                    
                 }
                 
                 completion()

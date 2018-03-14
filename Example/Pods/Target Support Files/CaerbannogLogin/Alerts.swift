@@ -41,4 +41,12 @@ public struct Alerts {
         
         return alert
     }
+    
+    public func accessDeniedWithTransportSecurity() -> UIAlertController {
+        
+        let alert = UIAlertController(title: "Access Denied", message: "Please add your host in Transport Security in info.plist", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
+        
+        return alert
+    }
 }
