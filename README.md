@@ -22,7 +22,7 @@ pod 'CaerbannogLogin'
 
 ## Author
 
-leodegeus7, leoardodegeus@gmail.com
+leodegeus7, leonardodegeus@gmail.com
 
 ## License
 

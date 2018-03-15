@@ -47,7 +47,7 @@ extension LoginViewController {
     
     public func login(username:String,password:String) {
         switch connectionConstant! {
-        case .LaravelPassportClientPassword(let requestTokenEndpoint,let _, let clientId,let clientSecret):
+        case .LaravelPassportClientPassword(let requestTokenEndpoint, _, let clientId,let clientSecret):
             cappriolaRequestHelper.login(header: ["Content-Type":"application/json"], body: ["grant_type":"password","client_id":clientId,"client_secret":clientSecret,"username":username,"password":password], method: "POST", endPoint: requestTokenEndpoint)
         }
     }

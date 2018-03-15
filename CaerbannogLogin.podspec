@@ -24,7 +24,7 @@ A easy framework to add login system in your ios app.
   s.homepage         = 'https://github.com/dbarbos/CaerbannogLogin'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leodegeus7' => 'leoardodegeus@gmail.com' }
+  s.author           = { 'leodegeus7' => 'leonardodegeus@gmail.com' }
   s.source           = { :git => 'https://github.com/dbarbos/CaerbannogLogin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

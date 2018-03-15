@@ -18,7 +18,7 @@ protocol LoginFieldsValidator {
 }
 
 public class LoginViewController: UIViewController {
-
+    
     ////////////////////////////////////
     // MARK: IBOutlet
     ////////////////////////////////////
@@ -57,16 +57,12 @@ public class LoginViewController: UIViewController {
     // MARK: View Controller Methods
     ////////////////////////////////////
     
-    public convenience init(whereNextViewControllerIs viewController: UIViewController? = nil, connection:ConnectionConfig) {
+    public convenience init(whereNextViewControllerIs viewController: UIViewController, connection:ConnectionConfig) {
         self.init(nibName: "LoginViewController", bundle: Bundle(for: LoginViewController.self))
         connectionConstant = connection
-        if let _ = viewController {
-            nextViewController = viewController
-        } else {
-            
-        }
+        nextViewController = viewController
     }
-
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         cappriolaRequestHelper.delegate = self
@@ -77,6 +73,9 @@ public class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
         regularLoginButton = loginButton
         applyLayout()
+        
+        
+        
         //hideKeyboardWhenTappedAround()
         //_ = hasToken()
         
@@ -105,7 +104,7 @@ public class LoginViewController: UIViewController {
         self.view.frame.origin.y = 0
     }
     
-
+    
     public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

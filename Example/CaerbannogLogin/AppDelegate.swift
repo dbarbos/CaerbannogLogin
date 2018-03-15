@@ -26,13 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "http://localhost:8080/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "6tw1rqMR6my36cWf2GAHcLnFi1UAgsn3A0Kpd4f7")
         let loginController = LoginViewController(whereNextViewControllerIs: initialViewController, connection: connection)
         
-        let layout = AdvancedLayout()
+        let advanced = AdvancedLayout()
+        advanced.button.font = UIFont.systemFont(ofSize: 32)
         
-        layout.button.backgroundColor = UIColor.red
-        layout.line1.color = UIColor.blue
-        layout.button.cornerRadius = 2
         
-        loginController.layout = .Advanced(layout: layout)
+        let simple = SimpleLayout()
+        simple.primaryColor = UIColor.red
+        
+        loginController.layout = Layout.Advanced(layout: advanced)
         
         loginController.showController()
         
