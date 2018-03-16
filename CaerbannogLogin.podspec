@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaerbannogLogin'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A easy framework to add login system in your app'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A easy framework to add login system in your ios app.
+A framework to create a secure and easy login system with customizable layout.
                        DESC
 
   s.homepage         = 'https://github.com/dbarbos/CaerbannogLogin'
@@ -28,7 +28,7 @@ A easy framework to add login system in your ios app.
   s.source           = { :git => 'https://github.com/dbarbos/CaerbannogLogin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'CaerbannogLogin/Classes/**/*'
   
