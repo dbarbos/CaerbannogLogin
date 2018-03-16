@@ -22,7 +22,9 @@ pod 'CaerbannogLogin', :git => 'https://github.com/dbarbos/CaerbannogLogin.git'
 
 ## Usage example
 
-![](https://media.giphy.com/media/2yuOapMEOjp4M1rcxu/giphy.gif)
+<p align="center">
+<img src="https://media.giphy.com/media/2yuOapMEOjp4M1rcxu/giphy.gif" width="80%">
+</p>
 
 
 1) Import the framework CaerbannogLogin in your AppDelegate;
