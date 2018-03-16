@@ -22,7 +22,8 @@ pod 'CaerbannogLogin', :git => 'https://github.com/dbarbos/CaerbannogLogin.git'
 
 ## Usage example
 
-![](https://media.giphy.com/media/37QADcAsBsDpBx9vJn/giphy.gif)
+![](https://media.giphy.com/media/2yuOapMEOjp4M1rcxu/giphy.gif)
+
 
 1) Import the framework CaerbannogLogin in your AppDelegate;
 2) Configure the way to connect to your server creating a ConnectionConfig object in didFinishLaunchingWithOptions. E.g.: the following example is to configure a Laravel Passport Client Password.
