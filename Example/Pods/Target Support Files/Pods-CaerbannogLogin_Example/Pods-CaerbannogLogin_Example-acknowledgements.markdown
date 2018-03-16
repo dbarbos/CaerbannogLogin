@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## CaerbannogLogin
 
-Copyright (c) 2018 leodegeus7 <leoardodegeus@gmail.com>
+Copyright (c) 2018 leodegeus7 <leonardodegeus@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

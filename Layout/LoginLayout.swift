@@ -10,6 +10,7 @@ import UIKit
 public struct ButtonConfig {
     public var backgroundColor:UIColor?
     public var font:UIFont?
+    public var alpha:Float?
     public var fontColor:UIColor?
     public var cornerRadius:Float?
 }
@@ -41,6 +42,7 @@ public struct LineConfig {
 public struct MainView {
     public var backgroundColor:UIColor?
     public var alpha:Float?
+    public var image:UIImage?
 }
 
 public protocol LoginLayout {

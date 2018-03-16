@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,33 +13,70 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CaerbannogLogin_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTm-Wx-cUB">
-                                <rect key="frame" x="106" y="400.66666666666669" width="163" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-Py-ou5">
+                                <rect key="frame" x="0.0" y="-11" width="375" height="829"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Caerbannog DemoApp!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTm-Wx-cUB">
+                                <rect key="frame" x="63" y="483.66666666666669" width="250" height="55.000000000000057"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Cqo-Id-ztJ"/>
-                                    <constraint firstAttribute="width" constant="163" id="K9v-UP-Gpk"/>
+                                    <constraint firstAttribute="height" constant="55" id="Cqo-Id-ztJ"/>
+                                    <constraint firstAttribute="width" constant="250" id="K9v-UP-Gpk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoColorful.png" translatesAutoresizingMaskIntoConstraints="NO" id="TpS-kP-mTg">
+                                <rect key="frame" x="67.666666666666686" y="185.66666666666663" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TpS-kP-mTg" secondAttribute="height" multiplier="1:1" id="QB7-CF-fSA"/>
+                                    <constraint firstAttribute="width" constant="240" id="pES-ZQ-4CG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-ci-OeT">
+                                <rect key="frame" x="142.66666666666666" y="623" width="90" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="x8l-1Z-HdY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.98532792540000003" green="1" blue="0.97453937970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnu-wr-PgF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FTm-Wx-cUB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9Kj-LB-Xp8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5RZ-Py-ou5" secondAttribute="bottom" constant="-40" id="7Nf-c6-XoS"/>
+                            <constraint firstItem="FTm-Wx-cUB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="9Kj-LB-Xp8"/>
+                            <constraint firstItem="9QN-ci-OeT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DFS-6M-7R6"/>
+                            <constraint firstItem="5RZ-Py-ou5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pec-jC-vjx"/>
                             <constraint firstItem="FTm-Wx-cUB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PfI-18-Oa7"/>
+                            <constraint firstItem="FTm-Wx-cUB" firstAttribute="top" secondItem="TpS-kP-mTg" secondAttribute="bottom" constant="58" id="QFu-18-bLK"/>
+                            <constraint firstItem="9QN-ci-OeT" firstAttribute="top" secondItem="FTm-Wx-cUB" secondAttribute="bottom" constant="84.333333333333258" id="TPI-6P-wBi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5RZ-Py-ou5" secondAttribute="trailing" id="doK-Zk-zEK"/>
+                            <constraint firstItem="TpS-kP-mTg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tZv-lX-NhA"/>
+                            <constraint firstItem="5RZ-Py-ou5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-55" id="yuF-L4-6AJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageBack" destination="5RZ-Py-ou5" id="rSJ-Af-Sxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+            <point key="canvasLocation" x="32.799999999999997" y="33.251231527093594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoColorful.png" width="512" height="512"/>
+    </resources>
 </document>

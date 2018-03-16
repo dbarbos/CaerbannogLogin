@@ -17,6 +17,64 @@ protocol LoginFieldsValidator {
     func loginFieldsAreValid(userIdField: UITextField, passwordField: UITextField) -> Bool
 }
 
+public class CaerbanoggLogin {
+    
+    public static let shared = CaerbanoggLogin()
+    private var loginController:LoginViewController!
+    private var connection:ConnectionConfig!
+    private var nextViewController:UIViewController!
+    private var layout:Layout!
+    
+    public func initialize(whereNextViewControllerIs viewController: UIViewController, connection:ConnectionConfig) {
+        self.loginController = LoginViewController(whereNextViewControllerIs: viewController, connection: connection)
+        self.connection = connection
+        self.nextViewController = viewController
+    }
+    
+    public func showController() {
+        if let _ = loginController {
+            if let app = UIApplication.shared.delegate, let window = app.window {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    window?.rootViewController = self.loginController
+                window?.makeKeyAndVisible()
+                }
+            }
+        } else {
+            print("Please, use the initialize method to use showController function")
+        }
+    }
+    
+    public func setLayout(layout:Layout) {
+        self.layout = layout
+        if let _ = loginController {
+            loginController.layout = layout
+        } else {
+            print("Please, use the initialize method to use setLayout function")
+        }
+    }
+    
+    public func logout(nextViewController:UIViewController) {
+        self.nextViewController = nextViewController
+        if let _ = loginController {
+            loginController.clearKeyChain(completion: { (bool) in
+                
+                if bool {
+                    loginController.dismiss(animated: false, completion: {
+                        self.initialize(whereNextViewControllerIs: nextViewController, connection: self.connection)
+                        self.setLayout(layout: self.layout)
+                        self.showController()
+                    })
+                }
+            })
+            
+        } else {
+            print("Please, use the initialize method to use logout function")
+        }
+    }
+    
+    
+}
+
 public class LoginViewController: UIViewController {
     
     ////////////////////////////////////
@@ -73,20 +131,28 @@ public class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
         regularLoginButton = loginButton
         applyLayout()
-        
-        
+
         
         //hideKeyboardWhenTappedAround()
-        //_ = hasToken()
-        
-    }
-    
-    public func showController() {
-        if let app = UIApplication.shared.delegate, let window = app.window {
-            window?.rootViewController = self
-            window?.makeKeyAndVisible()
+
+        if hasToken() {
+            
+            if let app = UIApplication.shared.delegate, let window = app.window {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+
+                    window?.rootViewController?.present(self.nextViewController!, animated: false, completion: {
+                    
+                })
+                }
+            }
         }
     }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+
+    }
+    
+
     
     ////////////////////////////////////
     // MARK: Keyboard Control
@@ -120,6 +186,7 @@ public class LoginViewController: UIViewController {
             if CappriolaReachability.isConnectedToNetwork() {
                 animateLoginbutton()
                 if hasToken() {
+                    
                     //validateToken()
                 }else{
                     if let 👤 = userIdField.text {
@@ -147,6 +214,29 @@ public class LoginViewController: UIViewController {
             fatalError("Error updating keychain - \(error)")
         }
     }
+    
+    public func getActualToken() -> String {
+        do {
+            let tokenItem = KeychainTokenItem(service: KeychainConfiguration.serviceName, account: Constants.appAccountName, accessGroup: KeychainConfiguration.accessGroup)
+            let token = try tokenItem.readToken()
+            return token
+        }
+        catch {
+            fatalError("Error updating keychain - \(error)")
+        }
+    }
+    
+    public func clearKeyChain(completion: (_ result: Bool) -> Void) {
+        do {
+            let tokenItem = KeychainTokenItem(service: KeychainConfiguration.serviceName, account: Constants.appAccountName, accessGroup: KeychainConfiguration.accessGroup)
+            try tokenItem.deleteItem()
+            completion(true)
+        }
+        catch {
+            completion(false)
+        }
+    }
+    
     
     
 }

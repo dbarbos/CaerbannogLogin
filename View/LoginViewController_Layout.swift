@@ -62,7 +62,21 @@ extension LoginViewController {
                 if let a = button.fontColor {
                     loginButton.setTitleColor(a, for: .normal)
                 }
+                if let a = button.alpha {
+                    loginButton.alpha = CGFloat(a)
+                }
                 
+                let main = layout.mainView
+                if let a = main.alpha {
+                    backgroundImage.alpha = CGFloat(a)
+                }
+                if let a = main.image {
+                    backgroundImage.image = a
+                }
+                if let a = main.backgroundColor {
+                    self.view.backgroundColor = a
+                    backgroundImage.backgroundColor = a
+                }
                 
                 changeIconLayout(icon: userIcon, iconLayout: layout.usernameIcon)
                 changeIconLayout(icon: passwordIcon, iconLayout: layout.passwordIcon)
@@ -107,6 +121,15 @@ extension LoginViewController {
         }
         if let a = labelLayout.fontColor {
             textField.textColor = a
+            let b = a.withAlphaComponent(0.7)
+            if let txt = textField.placeholder {
+                textField.attributedPlaceholder = NSAttributedString(string: txt,
+                                                                   attributes: [NSAttributedStringKey.foregroundColor: b])
+            } else {
+                
+                textField.attributedPlaceholder = NSAttributedString(string: "",
+                                                                     attributes: [NSAttributedStringKey.foregroundColor: b])
+            }
         }
     }
 }

@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import CaerbannogLogin
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageBack: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageBack.image = #imageLiteral(resourceName: "fundoMain.png")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,4 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func logoutButton(_ sender: Any) {
+        CaerbanoggLogin.shared.logout(nextViewController: self)
+    }
+    
+    
 }

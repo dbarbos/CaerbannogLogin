@@ -14,7 +14,10 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8E9E69E952127CD379ED1C30 /* Pods_CaerbannogLogin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3CEC4C6D50A9D224676B76 /* Pods_CaerbannogLogin_Tests.framework */; };
 		C24E0A829BCF1F651BDEC1C1 /* Pods_CaerbannogLogin_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31913EE5C11AC3C585D71AC /* Pods_CaerbannogLogin_Example.framework */; };
+		CD998E2D205C049F00C71C6A /* fundoMain.png in Resources */ = {isa = PBXBuildFile; fileRef = CD998E2C205C049F00C71C6A /* fundoMain.png */; };
+		CD998E34205C0B1F00C71C6A /* logoMain.png in Resources */ = {isa = PBXBuildFile; fileRef = CD998E33205C0B1F00C71C6A /* logoMain.png */; };
 		CDA37C2220584CC7002D3157 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA37C2120584CC7002D3157 /* Main.storyboard */; };
+		CDB0664F205B1F1700D9EAB5 /* logoColorful.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB0664E205B1F1700D9EAB5 /* logoColorful.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,10 @@
 		6811522617DD2DDE76DCACAA /* Pods-CaerbannogLogin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaerbannogLogin_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaerbannogLogin_Example/Pods-CaerbannogLogin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		838CC5960ABFD7E2A089E479 /* Pods-CaerbannogLogin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaerbannogLogin_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaerbannogLogin_Tests/Pods-CaerbannogLogin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BEE0376EC7C40833B449C243 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CD998E2C205C049F00C71C6A /* fundoMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundoMain.png; sourceTree = "<group>"; };
+		CD998E33205C0B1F00C71C6A /* logoMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoMain.png; sourceTree = "<group>"; };
 		CDA37C2120584CC7002D3157 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CDB0664E205B1F1700D9EAB5 /* logoColorful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoColorful.png; sourceTree = "<group>"; };
 		D31913EE5C11AC3C585D71AC /* Pods_CaerbannogLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaerbannogLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87ABF6CC41D0737D4BBE1AC /* CaerbannogLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CaerbannogLogin.podspec; path = ../CaerbannogLogin.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +101,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				CDB0664E205B1F1700D9EAB5 /* logoColorful.png */,
+				CD998E33205C0B1F00C71C6A /* logoMain.png */,
+				CD998E2C205C049F00C71C6A /* fundoMain.png */,
 				CDA37C2120584CC7002D3157 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -252,7 +261,10 @@
 			files = (
 				CDA37C2220584CC7002D3157 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				CD998E34205C0B1F00C71C6A /* logoMain.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				CD998E2D205C049F00C71C6A /* fundoMain.png in Resources */,
+				CDB0664F205B1F1700D9EAB5 /* logoColorful.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

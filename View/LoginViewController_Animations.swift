@@ -68,7 +68,7 @@ extension LoginViewController {
     func presentNextViewAnimation() {
         
         let nextView = nextViewController?.view
-        
+
         self.view.bringSubview(toFront: loginButton)
         
         UIView.animate(withDuration: 0.9, delay: 0.0, options: .curveEaseOut, animations: {
