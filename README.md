@@ -1,3 +1,5 @@
+![](https://i.imgur.com/tHLDFmC.png)
+
 > A framework to create a secure and easy login system with customizable layout.
 
 [![CI Status](http://img.shields.io/travis/leodegeus7/CaerbannogLogin.svg?style=flat)](https://travis-ci.org/leodegeus7/CaerbannogLogin)
@@ -20,6 +22,8 @@ pod 'CaerbannogLogin', :git => 'https://github.com/dbarbos/CaerbannogLogin.git'
 
 ## Usage example
 
+![](https://media.giphy.com/media/37QADcAsBsDpBx9vJn/giphy.gif)
+
 1) Import the framework CaerbannogLogin in your AppDelegate;
 2) Configure the way to connect to your server creating a ConnectionConfig object in didFinishLaunchingWithOptions. E.g.: the following example is to configure a Laravel Passport Client Password.
 
@@ -27,7 +31,7 @@ pod 'CaerbannogLogin', :git => 'https://github.com/dbarbos/CaerbannogLogin.git'
 let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: String, validadeTokenEndpoint: String, clientId: String, clientSecret: String)
 ```
 
-3) Create a LoginViewController with: <br />
+3) Initialize the framework with CaerbanoggLogin.shared.initialize with: <br />
   - Your connection object created in item 2; <br />
   - A view controller to proceed after login process is completed. <br />
 
@@ -35,34 +39,38 @@ let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEnd
 let storyboard = UIStoryboard(name: "Main", bundle: nil)
 let initialViewController = storyboard.instantiateViewController(withIdentifier: "OtherViewController")
 
-let loginController = LoginViewController(whereNextViewControllerIs: initialViewController, connection: connection)
+CaerbanoggLogin.shared.initialize(whereNextViewControllerIs: initialViewController, connection: connection)
 ```
 
-4) Customize LoginViewController assigning a layout to loginController.layout. There is two types of layout configuration, to simplify create a Simple Layout and change there properties.
+4) Customize passing a layout to CaerbanoggLogin.shared.setLayout(). There is two types of layout configuration, to simplify create a Simple Layout and change there properties.
 
 ```swift
 let simpleLayout = SimpleLayout()
 simpleLayout.primaryColor = UIColor
 simpleLayout.secondaryColor  = UIColor
 simpleLayout.backgroundImage = UIImage  
-loginController.layout = Layout.Simple(layout: simpleLayout)
+CaerbanoggLogin.shared.setLayout(layout: .Simple(layout: simpleLayout))
 ```
 
-5) Lastly, show the LoginViewController with the method .showController()
+5) Lastly, show your login controller with the method .showController()
 
 ```swift
-loginController.showController()
+CaerbanoggLogin.shared.showController()
 ```
 
 **EXTRAS** <br />
-6) If you want to customize all elements separately, create an AdvanceLayout and change there properties. After, assign this new object to loginController.layout.
+6) If you want to customize all elements separately, create an AdvanceLayout and change there properties. After, assign this new object to CaerbanoggLogin.shared.setLayout() method
 
 ```swift
 let advancedLayout = AdvancedLayout()
 advancedLayout.button.font = UIFont.systemFont(ofSize: 32)
-loginController.layout = Layout.Advanced(layout: advancedLayout)
+CaerbanoggLogin.shared.setLayout(layout: .Advanced(layout: advancedLayout))
 ```
+7) To logout, use the function logout assigning a UIViewController to be the next controller in flow after a new login:
 
+```swift
+CaerbanoggLogin.shared.logout(nextViewController: UIViewController())
+```
 
 ## Authors
 
@@ -73,6 +81,8 @@ dbarbos, dbjuniorjf@hotmail.com <br />
 
 * 0.0.1
     * First Commit
+* 0.0.2
+    * Created logout method and updaded DemoApp
 
 ## License
 
