@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaerbannogLogin'
-  s.version          = '0.0.23'
+  s.version          = '0.0.24'
   s.summary          = 'A easy framework to add login system in your app'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ A framework to create a secure and easy login system with customizable layout.
   s.source           = { :git => 'https://github.com/dbarbos/CaerbannogLogin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'CaerbannogLogin/Classes/**/*'
 

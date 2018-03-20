@@ -79,6 +79,7 @@ extension Dictionary where Key == String, Value == String {
     }
     
     func toJSON() -> Data? {
-        return try? JSONSerialization.data(withJSONObject: self, options: .sortedKeys)
+            return try? JSONSerialization.data(withJSONObject: self, options: [.prettyPrinted])
+
     }
 }
