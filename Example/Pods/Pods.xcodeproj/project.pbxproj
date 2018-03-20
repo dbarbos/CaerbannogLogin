@@ -34,6 +34,7 @@
 		CDDCE4692061B6EF00350594 /* logo2.png in Sources */ = {isa = PBXBuildFile; fileRef = CDDCE4662061B6D100350594 /* logo2.png */; };
 		CDDCE46A2061B6EF00350594 /* password.png in Sources */ = {isa = PBXBuildFile; fileRef = CDDCE4622061B6D100350594 /* password.png */; };
 		CDDCE46B2061B6EF00350594 /* user.png in Sources */ = {isa = PBXBuildFile; fileRef = CDDCE4642061B6D100350594 /* user.png */; };
+		CDDCE46D2061B8AB00350594 /* CaerbannogLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCE46C2061B8AB00350594 /* CaerbannogLogin.swift */; };
 		D1329095C478399314ECB1D424C891EC /* Pods-CaerbannogLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8822E06FF55A09F9C67715647DF24B /* Pods-CaerbannogLogin_Tests-dummy.m */; };
 		EBA34BAD080B56BA13E4F2420E013D11 /* CaerbannogLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFEEA9C57607EBDDA9882E61149E0E4 /* CaerbannogLogin-dummy.m */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		CDDCE4642061B6D100350594 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../CaerbannogLogin/Assets/user.png; sourceTree = "<group>"; };
 		CDDCE4652061B6D100350594 /* defaultBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defaultBackgroundImage.png; path = ../CaerbannogLogin/Assets/defaultBackgroundImage.png; sourceTree = "<group>"; };
 		CDDCE4662061B6D100350594 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo2.png; path = ../CaerbannogLogin/Assets/logo2.png; sourceTree = "<group>"; };
+		CDDCE46C2061B8AB00350594 /* CaerbannogLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaerbannogLogin.swift; sourceTree = "<group>"; };
 		E3071ED29622B5FD7854113DDA40E14C /* Pods-CaerbannogLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CaerbannogLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +263,7 @@
 				CDA37C0320584AAB002D3157 /* Keychain */,
 				CDA37C1620584AD3002D3157 /* Model */,
 				CD3CA1E6206151E600E701A5 /* .gitkeep */,
+				CDDCE46C2061B8AB00350594 /* CaerbannogLogin.swift */,
 			);
 			name = Classes;
 			path = CaerbannogLogin/Classes;
@@ -456,6 +459,7 @@
 				CDA37C1D20584AD4002D3157 /* Login.swift in Sources */,
 				CDA37C1C20584AD4002D3157 /* Alerts.swift in Sources */,
 				CDA37C0F20584AAC002D3157 /* KeychainConfiguration.swift in Sources */,
+				CDDCE46D2061B8AB00350594 /* CaerbannogLogin.swift in Sources */,
 				CDA37C1020584AAC002D3157 /* KeychainTokenItem.swift in Sources */,
 				CD3CA205206154CD00E701A5 /* LoginViewController_Validator.swift in Sources */,
 			);

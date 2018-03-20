@@ -17,59 +17,13 @@ protocol LoginFieldsValidator {
     func loginFieldsAreValid(userIdField: UITextField, passwordField: UITextField) -> Bool
 }
 
-public class CaerbanoggLogin {
-    
-    public static let shared = CaerbanoggLogin()
-    private var loginController:LoginViewController!
-    private var connection:ConnectionConfig!
-    private var nextViewController:UIViewController!
-    private var layout:Layout!
-    
-    public func initialize(whereNextViewControllerIs viewController: UIViewController, connection:ConnectionConfig) {
-        self.loginController = LoginViewController(whereNextViewControllerIs: viewController, connection: connection)
-        self.connection = connection
-        self.nextViewController = viewController
+public struct ImagesHelper {
+    private static var podsBundle: Bundle {
+        return Bundle(for: LoginViewController.self)
     }
     
-    public func showController() {
-        if let _ = loginController {
-            if let app = UIApplication.shared.delegate, let window = app.window {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    window?.rootViewController = self.loginController
-                window?.makeKeyAndVisible()
-                }
-            }
-        } else {
-            print("Please, use the initialize method to use showController function")
-        }
-    }
-    
-    public func setLayout(layout:Layout) {
-        self.layout = layout
-        if let _ = loginController {
-            loginController.layout = layout
-        } else {
-            print("Please, use the initialize method to use setLayout function")
-        }
-    }
-    
-    public func logout(nextViewController:UIViewController) {
-        self.nextViewController = nextViewController
-        if let _ = loginController {
-            loginController.clearKeyChain(completion: { (bool) in
-                
-                if bool {
-                    loginController.dismiss(animated: false, completion: {
-                        self.initialize(whereNextViewControllerIs: nextViewController, connection: self.connection)
-                        self.setLayout(layout: self.layout)
-                        self.showController()
-                    })
-                }
-            })
-            
-        } else {
-            print("Please, use the initialize method to use logout function")
-        }
+    public static func imageFor(name imageName: String) -> UIImage {
+        return UIImage.init(named: imageName, in: podsBundle, compatibleWith: nil)!
     }
     
     
@@ -118,6 +72,7 @@ public class LoginViewController: UIViewController {
     public convenience init(whereNextViewControllerIs viewController: UIViewController, connection:ConnectionConfig) {
         self.init(nibName: "LoginViewController", bundle: Bundle(for: LoginViewController.self))
         connectionConstant = connection
+        
         nextViewController = viewController
     }
     
@@ -130,6 +85,19 @@ public class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(LoginViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
         regularLoginButton = loginButton
+        
+        let defaultBackgroundImage = ImagesHelper.imageFor(name: "defaultBackgroundImage.png")
+        backgroundImage.image = defaultBackgroundImage
+        
+        let logoImg = ImagesHelper.imageFor(name: "logo.png")
+        logoImage.image = logoImg
+        
+        let pswImg = ImagesHelper.imageFor(name: "password.png")
+        passwordIcon.image = pswImg
+        
+        let userImg = ImagesHelper.imageFor(name: "user.png")
+        userIcon.image = userImg
+        
         applyLayout()
 
         
