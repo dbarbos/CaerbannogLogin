@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaerbannogLogin'
-  s.version          = '0.0.24'
+  s.version          = '0.0.25'
   s.summary          = 'A easy framework to add login system in your app'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ A framework to create a secure and easy login system with customizable layout.
   s.source_files = 'CaerbannogLogin/Classes/**/*'
 
   
-  # s.resource_bundles = {
-  #   'CaerbannogLogin' => ['CaerbannogLogin/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'CaerbannogLogin' => ['CaerbannogLogin/Assets/*.png']
+    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
