@@ -175,6 +175,7 @@
 		4CA8401B0218179070080C350B67077C /* CaerbannogLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CD5AC460206167A10054AACF /* Assets */,
 				CD3CA1E2206151E600E701A5 /* Classes */,
 				1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */,
 			);
@@ -257,11 +258,6 @@
 		CD3CA1F52061547900E701A5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				CD3CA2132061636F00E701A5 /* logo.png */,
-				CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */,
-				CD3CA20F2061636F00E701A5 /* logo2.png */,
-				CD3CA2102061636F00E701A5 /* password.png */,
-				CD3CA2112061636F00E701A5 /* user.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -287,6 +283,18 @@
 				CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD5AC460206167A10054AACF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD3CA2132061636F00E701A5 /* logo.png */,
+				CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */,
+				CD3CA20F2061636F00E701A5 /* logo2.png */,
+				CD3CA2102061636F00E701A5 /* password.png */,
+				CD3CA2112061636F00E701A5 /* user.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		CDA37C0320584AAB002D3157 /* Keychain */ = {
