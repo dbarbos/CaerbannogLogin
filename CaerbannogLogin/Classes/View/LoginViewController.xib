@@ -30,7 +30,7 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackgroundImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lkX-LM-4Gv">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="lkX-LM-4Gv">
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1058"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-bn-nKb">
@@ -160,7 +160,7 @@
         </view>
     </objects>
     <resources>
-        <image name="defaultBackgroundImage.jpg" width="1080" height="1920"/>
+        <image name="defaultBackgroundImage.png" width="1080" height="1920"/>
         <image name="logo.png" width="512" height="512"/>
         <image name="password.png" width="64" height="64"/>
         <image name="user.png" width="64" height="64"/>

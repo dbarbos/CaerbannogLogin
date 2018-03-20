@@ -24,11 +24,6 @@
 		CD3CA208206154CD00E701A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA203206154CD00E701A5 /* LoginViewController.swift */; };
 		CD3CA209206154CD00E701A5 /* LoginViewController_Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */; };
 		CD3CA2152061645C00E701A5 /* LoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2142061642E00E701A5 /* LoginViewController.xib */; };
-		CD3CA217206164A100E701A5 /* logo.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2132061636F00E701A5 /* logo.png */; };
-		CD3CA218206164A100E701A5 /* logo2.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA20F2061636F00E701A5 /* logo2.png */; };
-		CD3CA219206164A100E701A5 /* password.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2102061636F00E701A5 /* password.png */; };
-		CD3CA21A206164A100E701A5 /* user.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2112061636F00E701A5 /* user.png */; };
-		CD5AC45F206166240054AACF /* defaultBackgroundImage.jpg in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */; };
 		CDA37C0F20584AAC002D3157 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */; };
 		CDA37C1020584AAC002D3157 /* KeychainTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */; };
 		CDA37C1C20584AD4002D3157 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1520584AD3002D3157 /* Alerts.swift */; };
@@ -89,12 +84,12 @@
 		CD3CA202206154CD00E701A5 /* LoginViewController_Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Layout.swift; sourceTree = "<group>"; };
 		CD3CA203206154CD00E701A5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Connection.swift; sourceTree = "<group>"; };
-		CD3CA20F2061636F00E701A5 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
-		CD3CA2102061636F00E701A5 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
-		CD3CA2112061636F00E701A5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
-		CD3CA2132061636F00E701A5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		CD3CA2142061642E00E701A5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultBackgroundImage.jpg; sourceTree = "<group>"; };
+		CD5AC463206168600054AACF /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		CD5AC464206168600054AACF /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		CD5AC465206168600054AACF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CD5AC466206168600054AACF /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		CD5AC467206168690054AACF /* defaultBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultBackgroundImage.png; sourceTree = "<group>"; };
 		CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 		CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTokenItem.swift; sourceTree = "<group>"; };
 		CDA37C1520584AD3002D3157 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -175,7 +170,6 @@
 		4CA8401B0218179070080C350B67077C /* CaerbannogLogin */ = {
 			isa = PBXGroup;
 			children = (
-				CD5AC460206167A10054AACF /* Assets */,
 				CD3CA1E2206151E600E701A5 /* Classes */,
 				1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */,
 			);
@@ -241,6 +235,7 @@
 		CD3CA1E2206151E600E701A5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CD5AC461206168600054AACF /* Assets */,
 				CD3CA1FE206154CD00E701A5 /* View */,
 				CD3CA1F7206154A700E701A5 /* Connection */,
 				CD3CA1F52061547900E701A5 /* Images */,
@@ -285,16 +280,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CD5AC460206167A10054AACF /* Assets */ = {
+		CD5AC461206168600054AACF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				CD3CA2132061636F00E701A5 /* logo.png */,
-				CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */,
-				CD3CA20F2061636F00E701A5 /* logo2.png */,
-				CD3CA2102061636F00E701A5 /* password.png */,
-				CD3CA2112061636F00E701A5 /* user.png */,
+				CD5AC467206168690054AACF /* defaultBackgroundImage.png */,
+				CD5AC463206168600054AACF /* user.png */,
+				CD5AC464206168600054AACF /* password.png */,
+				CD5AC465206168600054AACF /* logo.png */,
+				CD5AC466206168600054AACF /* logo2.png */,
 			);
-			path = Assets;
+			name = Assets;
+			path = ../Assets;
 			sourceTree = "<group>";
 		};
 		CDA37C0320584AAB002D3157 /* Keychain */ = {
@@ -445,11 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5AC45F206166240054AACF /* defaultBackgroundImage.jpg in Sources */,
-				CD3CA217206164A100E701A5 /* logo.png in Sources */,
-				CD3CA218206164A100E701A5 /* logo2.png in Sources */,
-				CD3CA219206164A100E701A5 /* password.png in Sources */,
-				CD3CA21A206164A100E701A5 /* user.png in Sources */,
 				CD3CA2152061645C00E701A5 /* LoginViewController.xib in Sources */,
 				CD3CA208206154CD00E701A5 /* LoginViewController.swift in Sources */,
 				CD3CA1FD206154A700E701A5 /* CappriolaReachability.swift in Sources */,
