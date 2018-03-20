@@ -80,6 +80,8 @@
 		CD0F00672059BB8F00F1D53B /* LoginViewController_Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Connection.swift; sourceTree = "<group>"; };
 		CD0F00692059BBCA00F1D53B /* LoginViewController_Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Validator.swift; sourceTree = "<group>"; };
 		CD0F006B2059BBF700F1D53B /* LoginViewController_Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Animations.swift; sourceTree = "<group>"; };
+		CD3CA1E5206151E600E701A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD3CA1E6206151E600E701A5 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		CD92119D205852FA000E6A35 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CDA37C0120584AAB002D3157 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
@@ -134,8 +136,6 @@
 		1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDA37C1520584AD3002D3157 /* Alerts.swift */,
-				CDA37C1920584AD3002D3157 /* Constants.swift */,
 				20453C46AB09C2925CF36043CF7CBC28 /* CaerbannogLogin.modulemap */,
 				49AF6C77E27DEDEE585FD8F86D78D2D6 /* CaerbannogLogin.xcconfig */,
 				6DFEEA9C57607EBDDA9882E61149E0E4 /* CaerbannogLogin-dummy.m */,
@@ -168,12 +168,7 @@
 		4CA8401B0218179070080C350B67077C /* CaerbannogLogin */ = {
 			isa = PBXGroup;
 			children = (
-				CD0F006E2059BFCF00F1D53B /* Images */,
-				CD0F006D2059BFB600F1D53B /* Layout */,
-				CDA37C0620584AAB002D3157 /* Connection */,
-				CDA37C0320584AAB002D3157 /* Keychain */,
-				CDA37BFF20584AAB002D3157 /* View */,
-				CDA37C1620584AD3002D3157 /* Model */,
+				CD3CA1E2206151E600E701A5 /* Classes */,
 				1B27EBC552CEBE17EEF2C03B4F0BB1ED /* Support Files */,
 			);
 			name = CaerbannogLogin;
@@ -240,7 +235,50 @@
 			children = (
 				CDA37C1A20584AD4002D3157 /* Assets.xcassets */,
 			);
+			name = Images;
+			path = ../../Images;
+			sourceTree = "<group>";
+		};
+		CD3CA1E2206151E600E701A5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDA37C1520584AD3002D3157 /* Alerts.swift */,
+				CDA37C1920584AD3002D3157 /* Constants.swift */,
+				CD3CA1E3206151E600E701A5 /* Connection */,
+				CD3CA1E4206151E600E701A5 /* Images */,
+				CD0F006E2059BFCF00F1D53B /* Images */,
+				CD0F006D2059BFB600F1D53B /* Layout */,
+				CDA37C0620584AAB002D3157 /* Connection */,
+				CDA37C0320584AAB002D3157 /* Keychain */,
+				CDA37BFF20584AAB002D3157 /* View */,
+				CDA37C1620584AD3002D3157 /* Model */,
+				CD3CA1E6206151E600E701A5 /* .gitkeep */,
+				CD3CA1E7206151E600E701A5 /* View */,
+			);
+			name = Classes;
+			path = CaerbannogLogin/Classes;
+			sourceTree = "<group>";
+		};
+		CD3CA1E3206151E600E701A5 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		CD3CA1E4206151E600E701A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CD3CA1E5206151E600E701A5 /* Assets.xcassets */,
+			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		CD3CA1E7206151E600E701A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CDA37BFF20584AAB002D3157 /* View */ = {
@@ -253,7 +291,8 @@
 				CD0F00692059BBCA00F1D53B /* LoginViewController_Validator.swift */,
 				CD0F006B2059BBF700F1D53B /* LoginViewController_Animations.swift */,
 			);
-			path = View;
+			name = View;
+			path = ../../View;
 			sourceTree = "<group>";
 		};
 		CDA37C0320584AAB002D3157 /* Keychain */ = {
@@ -272,7 +311,8 @@
 				CDA37C0720584AAB002D3157 /* CappriolaRequestHelper.swift */,
 				CDA37C0820584AAB002D3157 /* CappriolaHTTPRequest.swift */,
 			);
-			path = Connection;
+			name = Connection;
+			path = ../../Connection;
 			sourceTree = "<group>";
 		};
 		CDA37C1620584AD3002D3157 /* Model */ = {
