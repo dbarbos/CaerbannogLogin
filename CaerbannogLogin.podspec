@@ -28,13 +28,14 @@ A framework to create a secure and easy login system with customizable layout.
   s.source           = { :git => 'https://github.com/dbarbos/CaerbannogLogin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'CaerbannogLogin/Classes/**/*'
+
   
-  s.resource_bundles = {
-    'CaerbannogLogin' => ['CaerbannogLogin/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'CaerbannogLogin' => ['CaerbannogLogin/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

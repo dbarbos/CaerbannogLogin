@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 protocol CappriolaRequestHelperDelegate {
     func requestSuccess(message: String, requestType: RequestType, data: Data)
