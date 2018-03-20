@@ -23,6 +23,12 @@
 		CD3CA207206154CD00E701A5 /* LoginViewController_Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA202206154CD00E701A5 /* LoginViewController_Layout.swift */; };
 		CD3CA208206154CD00E701A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA203206154CD00E701A5 /* LoginViewController.swift */; };
 		CD3CA209206154CD00E701A5 /* LoginViewController_Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */; };
+		CD3CA2152061645C00E701A5 /* LoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2142061642E00E701A5 /* LoginViewController.xib */; };
+		CD3CA217206164A100E701A5 /* logo.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2132061636F00E701A5 /* logo.png */; };
+		CD3CA218206164A100E701A5 /* logo2.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA20F2061636F00E701A5 /* logo2.png */; };
+		CD3CA219206164A100E701A5 /* password.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2102061636F00E701A5 /* password.png */; };
+		CD3CA21A206164A100E701A5 /* user.png in Sources */ = {isa = PBXBuildFile; fileRef = CD3CA2112061636F00E701A5 /* user.png */; };
+		CD5AC45F206166240054AACF /* defaultBackgroundImage.jpg in Sources */ = {isa = PBXBuildFile; fileRef = CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */; };
 		CDA37C0F20584AAC002D3157 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */; };
 		CDA37C1020584AAC002D3157 /* KeychainTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */; };
 		CDA37C1C20584AD4002D3157 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA37C1520584AD3002D3157 /* Alerts.swift */; };
@@ -75,16 +81,20 @@
 		CAC03F427ED746951732A15D7D7A1751 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0F006320599E1800F1D53B /* LoginLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLayout.swift; sourceTree = "<group>"; };
 		CD3CA1E6206151E600E701A5 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		CD3CA1F62061547900E701A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3CA1F8206154A700E701A5 /* CappriolaRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaRequestHelper.swift; sourceTree = "<group>"; };
 		CD3CA1F9206154A700E701A5 /* CappriolaHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaHTTPRequest.swift; sourceTree = "<group>"; };
 		CD3CA1FA206154A700E701A5 /* CappriolaReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CappriolaReachability.swift; sourceTree = "<group>"; };
 		CD3CA1FF206154CD00E701A5 /* LoginViewController_Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Validator.swift; sourceTree = "<group>"; };
 		CD3CA200206154CD00E701A5 /* LoginViewController_Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Animations.swift; sourceTree = "<group>"; };
-		CD3CA201206154CD00E701A5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CD3CA202206154CD00E701A5 /* LoginViewController_Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Layout.swift; sourceTree = "<group>"; };
 		CD3CA203206154CD00E701A5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController_Connection.swift; sourceTree = "<group>"; };
+		CD3CA20F2061636F00E701A5 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		CD3CA2102061636F00E701A5 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		CD3CA2112061636F00E701A5 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		CD3CA2132061636F00E701A5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CD3CA2142061642E00E701A5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultBackgroundImage.jpg; sourceTree = "<group>"; };
 		CDA37C0420584AAB002D3157 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 		CDA37C0520584AAB002D3157 /* KeychainTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTokenItem.swift; sourceTree = "<group>"; };
 		CDA37C1520584AD3002D3157 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -247,7 +257,11 @@
 		CD3CA1F52061547900E701A5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				CD3CA1F62061547900E701A5 /* Assets.xcassets */,
+				CD3CA2132061636F00E701A5 /* logo.png */,
+				CD5AC45E2061660F0054AACF /* defaultBackgroundImage.jpg */,
+				CD3CA20F2061636F00E701A5 /* logo2.png */,
+				CD3CA2102061636F00E701A5 /* password.png */,
+				CD3CA2112061636F00E701A5 /* user.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -267,8 +281,8 @@
 			children = (
 				CD3CA1FF206154CD00E701A5 /* LoginViewController_Validator.swift */,
 				CD3CA200206154CD00E701A5 /* LoginViewController_Animations.swift */,
-				CD3CA201206154CD00E701A5 /* LoginViewController.xib */,
 				CD3CA202206154CD00E701A5 /* LoginViewController_Layout.swift */,
+				CD3CA2142061642E00E701A5 /* LoginViewController.xib */,
 				CD3CA203206154CD00E701A5 /* LoginViewController.swift */,
 				CD3CA204206154CD00E701A5 /* LoginViewController_Connection.swift */,
 			);
@@ -423,6 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5AC45F206166240054AACF /* defaultBackgroundImage.jpg in Sources */,
+				CD3CA217206164A100E701A5 /* logo.png in Sources */,
+				CD3CA218206164A100E701A5 /* logo2.png in Sources */,
+				CD3CA219206164A100E701A5 /* password.png in Sources */,
+				CD3CA21A206164A100E701A5 /* user.png in Sources */,
+				CD3CA2152061645C00E701A5 /* LoginViewController.xib in Sources */,
 				CD3CA208206154CD00E701A5 /* LoginViewController.swift in Sources */,
 				CD3CA1FD206154A700E701A5 /* CappriolaReachability.swift in Sources */,
 				CD3CA206206154CD00E701A5 /* LoginViewController_Animations.swift in Sources */,

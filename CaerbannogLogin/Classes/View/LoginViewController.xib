@@ -30,10 +30,10 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="lkX-LM-4Gv">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackgroundImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lkX-LM-4Gv">
                     <rect key="frame" x="0.0" y="0.0" width="768" height="1058"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-bn-nKb">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="kDF-bn-nKb">
                     <rect key="frame" x="26" y="757" width="30" height="30"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -41,7 +41,7 @@
                         <constraint firstAttribute="height" constant="30" id="dyn-Is-2V6"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="RNC-tz-ZfW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="RNC-tz-ZfW">
                     <rect key="frame" x="26" y="808" width="30" height="30"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -49,7 +49,7 @@
                         <constraint firstAttribute="width" constant="30" id="SmD-fu-v9n"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-fN-sHW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-fN-sHW">
                     <rect key="frame" x="254.5" y="250.5" width="260" height="260"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -160,9 +160,9 @@
         </view>
     </objects>
     <resources>
-        <image name="defaultBackgroundImage" width="1080" height="1920"/>
-        <image name="logo" width="512" height="512"/>
-        <image name="password" width="16" height="16"/>
-        <image name="user" width="32" height="32"/>
+        <image name="defaultBackgroundImage.jpg" width="1080" height="1920"/>
+        <image name="logo.png" width="512" height="512"/>
+        <image name="password.png" width="64" height="64"/>
+        <image name="user.png" width="64" height="64"/>
     </resources>
 </document>
