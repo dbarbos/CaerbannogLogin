@@ -27,23 +27,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         CaerbanoggLogin.shared.initialize(whereNextViewControllerIs: initialViewController, connection: connection)
         
-        let advancedLayout = AdvancedLayout()
+        //let advancedLayout = AdvancedLayout()
         
-        advancedLayout.image.image = #imageLiteral(resourceName: "logoMain.png")
-        advancedLayout.button.backgroundColor = UIColor(red: 117/255, green: 110/255, blue: 133/255, alpha: 1)
-        advancedLayout.button.font = UIFont.systemFont(ofSize: 16)
-        advancedLayout.button.alpha = 1
-        advancedLayout.line1.color = UIColor.white
-        advancedLayout.line1.alpha = 0.9
-        advancedLayout.line2.color = UIColor.white
-        advancedLayout.usernameLabel.fontColor = UIColor.white
-        advancedLayout.passwordLabel.fontColor = UIColor.white
-        advancedLayout.usernameIcon.image = #imageLiteral(resourceName: "user")
-        advancedLayout.passwordIcon.image = #imageLiteral(resourceName: "password")
-        advancedLayout.mainView.image = #imageLiteral(resourceName: "fundoMain.png")
+//        advancedLayout.image.image = #imageLiteral(resourceName: "logo2.png")
+//        advancedLayout.button.backgroundColor = UIColor(red: 117/255, green: 110/255, blue: 133/255, alpha: 1)
+//        advancedLayout.button.font = UIFont.systemFont(ofSize: 16)
+//        advancedLayout.button.alpha = 1
+//        advancedLayout.line1.color = UIColor.white
+//        advancedLayout.line1.alpha = 0.9
+//        advancedLayout.line2.color = UIColor.white
+//        advancedLayout.usernameLabel.fontColor = UIColor.white
+//        advancedLayout.passwordLabel.fontColor = UIColor.white
+//        advancedLayout.usernameIcon.image = #imageLiteral(resourceName: "user.png")
+//        advancedLayout.passwordIcon.image = #imageLiteral(resourceName: "password.png")
+//        advancedLayout.mainView.image = #imageLiteral(resourceName: "logo2.png")
         
         
-        CaerbanoggLogin.shared.setLayout(layout: .Advanced(layout: advancedLayout))
+        //CaerbanoggLogin.shared.setLayout(layout: .Advanced(layout: advancedLayout))
         
         CaerbanoggLogin.shared.showController()
         
