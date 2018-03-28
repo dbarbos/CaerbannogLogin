@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         CaerbanoggLogin.shared.initialize(whereNextViewControllerIs: initialViewController, connection: connection)
-        CaerbanoggLogin.shared.useTouchID(true)
+        CaerbanoggLogin.shared.useTouchID(messageToShow: "Please, confirm the touch ID")
         
         
         //let advancedLayout = AdvancedLayout()

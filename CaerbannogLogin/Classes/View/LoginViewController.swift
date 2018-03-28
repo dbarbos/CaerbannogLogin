@@ -66,6 +66,7 @@ public class LoginViewController: UIViewController {
     
     public var layout:Layout?
     public var useTouchId = false
+    public var messageToShowWithTouchID = ""
     var connectionConstant:ConnectionConfig!
     
     ////////////////////////////////////
@@ -167,7 +168,7 @@ public class LoginViewController: UIViewController {
     public func validadeTouchId(completion: @escaping (_ result: (Bool,Error?)) -> Void) {
         authenticationContext.evaluatePolicy(
             .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "Only awesome people are allowed",
+            localizedReason: messageToShowWithTouchID,
             reply: {(success, error) -> Void in
                 if( success ) {
                     

@@ -77,10 +77,12 @@ public class CaerbanoggLogin {
         }
     }
     
-    public func useTouchID(_ bool:Bool) {
+    public func useTouchID(messageToShow:String) {
         if let _ = loginController {
-            loginController.useTouchId = bool
+            loginController.useTouchId = true
+            loginController.messageToShowWithTouchID = messageToShow
         } else {
+            
             print("Please, use the initialize method to use touchID function")
         }
     }
