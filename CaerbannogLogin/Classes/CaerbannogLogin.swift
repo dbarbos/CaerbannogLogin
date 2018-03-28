@@ -34,6 +34,8 @@ public class CaerbanoggLogin {
         }
     }
     
+    
+    
     public func setLayout(layout:Layout) {
         self.layout = layout
         if let _ = loginController {
@@ -72,6 +74,14 @@ public class CaerbanoggLogin {
             }
         } else {
             return ""
+        }
+    }
+    
+    public func useTouchID(_ bool:Bool) {
+        if let _ = loginController {
+            loginController.useTouchId = bool
+        } else {
+            print("Please, use the initialize method to use touchID function")
         }
     }
     

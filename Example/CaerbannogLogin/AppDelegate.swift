@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         CaerbanoggLogin.shared.initialize(whereNextViewControllerIs: initialViewController, connection: connection)
+        CaerbanoggLogin.shared.useTouchID(true)
+        
         
         //let advancedLayout = AdvancedLayout()
         

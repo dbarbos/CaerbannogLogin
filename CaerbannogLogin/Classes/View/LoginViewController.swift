@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import LocalAuthentication
 
 protocol Navigatable {
     func canPresentNextView() -> Bool
@@ -58,11 +58,14 @@ public class LoginViewController: UIViewController {
     internal var isLoading : Bool = false
     internal var regularLoginButton : UIButton = UIButton()
     
+    let authenticationContext = LAContext()
+    
     ////////////////////////////////////
     // MARK: Configs Variable
     ////////////////////////////////////
     
     public var layout:Layout?
+    public var useTouchId = false
     var connectionConstant:ConnectionConfig!
     
     ////////////////////////////////////
@@ -99,28 +102,179 @@ public class LoginViewController: UIViewController {
         userIcon.image = userImg
         
         applyLayout()
-
+        
         
         //hideKeyboardWhenTappedAround()
-
+        
         if hasToken() {
             
-            if let app = UIApplication.shared.delegate, let window = app.window {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-
-                    window?.rootViewController?.present(self.nextViewController!, animated: false, completion: {
+            if useTouchId {
+                
+                if thereIsTouchId() {
                     
-                })
+                    validadeTouchId(completion: { (result) in
+                        let resultBool = result.0
+                        let error = result.1
+                        
+                        if resultBool {
+                            self.segueToNextView()
+                        } else {
+                            var message = ""
+                            if let errorLA = error as? LAError {
+                                if self.testLogoutUserIfTouchIdFails(errorCode: errorLA.code.rawValue) {
+                                    self.clearKeyChain(completion: { (bool) in
+
+                                    })
+                                }
+                                message = self.errorMessageForLAErrorCode(errorCode: errorLA.code.rawValue)
+                            } else {
+                                message = "Unknown error: Can't validade error message"
+                            }
+                            self.showAlertWithTitle(title: "Error in validation", message: message)
+                        }
+                        
+                    })
+                } else {
+                    self.showAlertWithTitle(title: "Error in validation", message: "There isn't touchId in this device")
                 }
+            } else {
+                self.segueToNextView()
             }
+            
         }
     }
     
     public override func viewWillAppear(_ animated: Bool) {
-
+        
     }
     
-
+    public func segueToNextView() {
+        DispatchQueue.main.async {
+        
+        
+        if let app = UIApplication.shared.delegate, let window = app.window {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                
+                window?.rootViewController?.present(self.nextViewController!, animated: false, completion: {
+                    
+                })
+            }
+        }
+        }
+    }
+    
+    
+    public func validadeTouchId(completion: @escaping (_ result: (Bool,Error?)) -> Void) {
+        authenticationContext.evaluatePolicy(
+            .deviceOwnerAuthenticationWithBiometrics,
+            localizedReason: "Only awesome people are allowed",
+            reply: {(success, error) -> Void in
+                if( success ) {
+                    
+                    completion((true,nil))
+                    
+                }else {
+                    if let error = error {
+                        completion((false,error))
+                    }
+                    completion((false,nil))
+                }
+                
+        })
+    }
+    
+    func testLogoutUserIfTouchIdFails(errorCode:Int) -> Bool {
+        var bool = false
+        switch errorCode {
+        case LAError.authenticationFailed.rawValue:
+            bool = true
+        case LAError.appCancel.rawValue:
+            bool = true
+        case LAError.passcodeNotSet.rawValue:
+            bool = true
+        case LAError.touchIDLockout.rawValue:
+            bool = true
+        case LAError.touchIDNotAvailable.rawValue:
+            bool = true
+        case LAError.userCancel.rawValue:
+            bool = true
+        case LAError.userFallback.rawValue:
+            bool = true
+        default:
+            bool = false
+        }
+        
+        return bool
+    }
+    
+    func errorMessageForLAErrorCode( errorCode:Int ) -> String {
+        
+        var message = ""
+        
+        switch errorCode {
+            
+        case LAError.appCancel.rawValue:
+            message = "Authentication was cancelled by application"
+            
+        case LAError.authenticationFailed.rawValue:
+            message = "The user failed to provide valid credentials, you need to login again."
+            
+        case LAError.invalidContext.rawValue:
+            message = "The context is invalid"
+            
+        case LAError.passcodeNotSet.rawValue:
+            message = "Passcode is not set on the device"
+            
+        case LAError.systemCancel.rawValue:
+            message = "Authentication was cancelled by the system"
+            
+        case LAError.touchIDLockout.rawValue:
+            message = "Too many failed attempts."
+            
+        case LAError.touchIDNotAvailable.rawValue:
+            message = "TouchID is not available on the device"
+            
+        case LAError.userCancel.rawValue:
+            message = "The user did cancel"
+            
+        case LAError.userFallback.rawValue:
+            message = "The user chose to use the fallback"
+        default:
+            message = "Did not find error code on LAError object"
+            
+        }
+        
+        return message
+        
+    }
+    
+    
+    public func thereIsTouchId() -> Bool {
+        if authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+            return true
+        }
+        else {
+            return false
+        }
+        
+    }
+    
+    func showAlertViewIfNoBiometricSensorHasBeenDetected(){
+        showAlertWithTitle(title: "Error", message: "This device does not have a TouchID sensor.")
+    }
+    
+    func showAlertWithTitle( title:String, message:String ) {
+        
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertVC.addAction(okAction)
+        
+        DispatchQueue.main.async {
+            self.present(alertVC, animated: true, completion: nil)
+        }
+        
+    }
     
     ////////////////////////////////////
     // MARK: Keyboard Control
