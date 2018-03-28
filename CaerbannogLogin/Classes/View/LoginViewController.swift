@@ -328,12 +328,14 @@ public class LoginViewController: UIViewController {
     // MARK: KeyChain Methods
     ////////////////////////////////////
     
-    public func createOrUpdateKeyChainAccount(_ value: String) {
+    public func createOrUpdateKeyChainAccount(_ value: String, completion: (_ token: String?) -> Void) {
         do {
             let tokenItem = KeychainTokenItem(service: KeychainConfiguration.serviceName, account: Constants.appAccountName, accessGroup: KeychainConfiguration.accessGroup)
             try tokenItem.saveToken(value)
+            completion(value)
         }
         catch {
+            completion(nil)
             fatalError("Error updating keychain - \(error)")
         }
     }
