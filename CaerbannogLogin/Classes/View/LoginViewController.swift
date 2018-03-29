@@ -129,14 +129,14 @@ public class LoginViewController: UIViewController {
                                 }
                                 message = self.errorMessageForLAErrorCode(errorCode: errorLA.code.rawValue)
                             } else {
-                                message = "Unknown error: Can't validade error message"
+                                message = LoginStrings.unknownError
                             }
                             self.showAlertWithTitle(title: "Error in validation", message: message)
                         }
                         
                     })
                 } else {
-                    self.showAlertWithTitle(title: "Error in validation", message: "There isn't touchId in this device")
+                    self.showAlertWithTitle(title: "Error in validation", message: LoginStrings.thereIsntSensor)
                 }
             } else {
                 self.segueToNextView()
@@ -165,104 +165,7 @@ public class LoginViewController: UIViewController {
     }
     
     
-    public func validadeTouchId(completion: @escaping (_ result: (Bool,Error?)) -> Void) {
-        authenticationContext.evaluatePolicy(
-            .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: messageToShowWithTouchID,
-            reply: {(success, error) -> Void in
-                if( success ) {
-                    
-                    completion((true,nil))
-                    
-                }else {
-                    if let error = error {
-                        completion((false,error))
-                    }
-                    completion((false,nil))
-                }
-                
-        })
-    }
-    
-    func testLogoutUserIfTouchIdFails(errorCode:Int) -> Bool {
-        var bool = false
-        switch errorCode {
-        case LAError.authenticationFailed.rawValue:
-            bool = true
-        case LAError.appCancel.rawValue:
-            bool = true
-        case LAError.passcodeNotSet.rawValue:
-            bool = true
-        case LAError.touchIDLockout.rawValue:
-            bool = true
-        case LAError.touchIDNotAvailable.rawValue:
-            bool = true
-        case LAError.userCancel.rawValue:
-            bool = true
-        case LAError.userFallback.rawValue:
-            bool = true
-        default:
-            bool = false
-        }
-        
-        return bool
-    }
-    
-    func errorMessageForLAErrorCode( errorCode:Int ) -> String {
-        
-        var message = ""
-        
-        switch errorCode {
-            
-        case LAError.appCancel.rawValue:
-            message = "Authentication was cancelled by application"
-            
-        case LAError.authenticationFailed.rawValue:
-            message = "The user failed to provide valid credentials, you need to login again."
-            
-        case LAError.invalidContext.rawValue:
-            message = "The context is invalid"
-            
-        case LAError.passcodeNotSet.rawValue:
-            message = "Passcode is not set on the device"
-            
-        case LAError.systemCancel.rawValue:
-            message = "Authentication was cancelled by the system"
-            
-        case LAError.touchIDLockout.rawValue:
-            message = "Too many failed attempts."
-            
-        case LAError.touchIDNotAvailable.rawValue:
-            message = "TouchID is not available on the device"
-            
-        case LAError.userCancel.rawValue:
-            message = "The user did cancel"
-            
-        case LAError.userFallback.rawValue:
-            message = "The user chose to use the fallback"
-        default:
-            message = "Did not find error code on LAError object"
-            
-        }
-        
-        return message
-        
-    }
-    
-    
-    public func thereIsTouchId() -> Bool {
-        if authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
-            return true
-        }
-        else {
-            return false
-        }
-        
-    }
-    
-    func showAlertViewIfNoBiometricSensorHasBeenDetected(){
-        showAlertWithTitle(title: "Error", message: "This device does not have a TouchID sensor.")
-    }
+
     
     func showAlertWithTitle( title:String, message:String ) {
         
