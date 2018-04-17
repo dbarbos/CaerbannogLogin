@@ -21,7 +21,6 @@ extension LoginViewController : CappriolaRequestHelperDelegate {
         
         if let myToken = myDictionary[tokenField] as? String {
             createOrUpdateKeyChainAccount(myToken, completion: { (token) in
-                print(myToken)
                 presentNextViewAnimation()
             })
             

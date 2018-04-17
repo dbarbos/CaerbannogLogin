@@ -136,7 +136,13 @@ public class LoginViewController: UIViewController {
                         
                     })
                 } else {
-                    self.showAlertWithTitle(title: "Error in validation", message: LoginStrings.thereIsntSensor)
+                    
+                    if let next = nextViewController {
+                        self.showAlertWithTitle(title: "Error in validation", message: LoginStrings.thereIsntSensor)
+                        CaerbanoggLogin.shared.logout(nextViewController: next)
+                    } else {
+                        self.showAlertWithTitle(title: "Error", message: LoginStrings.fatalErrorView)
+                    }
                 }
             } else {
                 self.segueToNextView()
@@ -204,6 +210,7 @@ public class LoginViewController: UIViewController {
     ////////////////////////////////////
     // MARK: IBActions
     ////////////////////////////////////
+
     
     @IBAction func loginButtonPress() {
         if self.loginFieldsAreValid(userIdField: userIdField,passwordField: passwordField) && self.canPresentNextView() {
@@ -239,18 +246,17 @@ public class LoginViewController: UIViewController {
         }
         catch {
             completion(nil)
-            fatalError("Error updating keychain - \(error)")
         }
     }
     
-    public func getActualToken() -> String {
+    public func getActualToken() -> String? {
         do {
             let tokenItem = KeychainTokenItem(service: KeychainConfiguration.serviceName, account: Constants.appAccountName, accessGroup: KeychainConfiguration.accessGroup)
             let token = try tokenItem.readToken()
             return token
         }
         catch {
-            fatalError("Error updating keychain - \(error)")
+            return nil
         }
     }
     
@@ -277,13 +283,12 @@ extension LoginViewController : Navigatable {
     
     public func canPresentNextView() -> Bool {
         if let _ = nextViewController {
-            print("Next UIViewController can be loaded.")
             return true
         }
         else {
-            print("No UIViewController loaded.")
+            return false
         }
-        return false
+        
     }
 }
 

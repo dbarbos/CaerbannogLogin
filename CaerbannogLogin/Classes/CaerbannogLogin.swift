@@ -68,7 +68,11 @@ public class CaerbanoggLogin {
     public func getActualToken() -> String {
         if let _ = loginController {
             if loginController.hasToken() {
-                return loginController.getActualToken()
+                if let token = loginController.getActualToken() {
+                    return token
+                } else {
+                    return ""
+                }
             } else {
                 return ""
             }

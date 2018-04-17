@@ -39,25 +39,14 @@ class CappriolaRequestHelper: NSObject {
         if let data = body.toJSON() {
             request.httpBody = data
         }
-
-        
         cappriola.getData(request: request, success: { (response, data) -> () in
-            //code
-            print("SUCESSO INCRIVEL!")
-            
             self.delegate?.requestSuccess(message: "Token granted!", requestType: .RequestToken, data: data)
             
             
         }, error: { (message, response) -> () in
-            //code
-            print("ERRO PEGO DE FORMA CORRETA")
-            
             self.delegate?.requestFail(message: message, requestType: .RequestToken)
             
         }) {
-            
-            print("COMPLETION PERFEITO!")
-            
         }
         
     }

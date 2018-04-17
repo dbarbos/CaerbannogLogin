@@ -20,4 +20,5 @@ public class LoginStrings {
     static var userCancel = "User canceled touch Id"
     static var thereIsntSensor = "This device does not have TouchID configured."
     static var unknownError = "Unknown error: Can't validade error message"
+    static var fatalErrorView = "Fatal error in login, we can't find the next view in flow"
 }

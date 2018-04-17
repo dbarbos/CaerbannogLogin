@@ -47,11 +47,10 @@ extension LoginViewController : LoginFieldsValidator {
             tokenItem = try KeychainTokenItem.tokenItems(forService: KeychainConfiguration.serviceName, accessGroup: KeychainConfiguration.accessGroup)
         }
         catch {
-            fatalError("Error fetching password items - \(error)")
+            return false
         }
         
         if tokenItem.contains(where: { $0.account == Constants.appAccountName }) {
-            print("Possui token")
             return true
         }
         
