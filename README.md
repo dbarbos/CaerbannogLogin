@@ -2,15 +2,12 @@
 
 > A framework to create a secure and easy login system with customizable layout.
 
-[![CI Status](http://img.shields.io/travis/leodegeus7/CaerbannogLogin.svg?style=flat)](https://travis-ci.org/leodegeus7/CaerbannogLogin)
-[![Version](https://img.shields.io/cocoapods/v/CaerbannogLogin.svg?style=flat)](http://cocoapods.org/pods/CaerbannogLogin)
-[![License](https://img.shields.io/cocoapods/l/CaerbannogLogin.svg?style=flat)](http://cocoapods.org/pods/CaerbannogLogin)
-[![Platform](https://img.shields.io/cocoapods/p/CaerbannogLogin.svg?style=flat)](http://cocoapods.org/pods/CaerbannogLogin)
+![Bitrise Status](https://app.bitrise.io/app/99d8db7b4ecd747c/status.svg?token=ZA9gXcaIpYeQiexVoNlxfQ)
 
 ## Requirements
 
-  - Swift 4+
-  - Xcode 9.2+
+  - Swift 4.2+
+  - Xcode 10.0+
 
 ## Installation
 
