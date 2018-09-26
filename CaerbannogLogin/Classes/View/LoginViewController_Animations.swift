@@ -69,7 +69,7 @@ extension LoginViewController {
         
         let nextView = nextViewController?.view
 
-        self.view.bringSubview(toFront: loginButton)
+        self.view.bringSubviewToFront(loginButton)
         
         UIView.animate(withDuration: 0.9, delay: 0.0, options: .curveEaseOut, animations: {
             self.loginButton.transform = CGAffineTransform(scaleX: 50.0, y: 50.0)
@@ -77,7 +77,7 @@ extension LoginViewController {
         }) { (success) in
             
             self.view.addSubview(nextView!)
-            self.view.bringSubview(toFront: self.loginButton)
+            self.view.bringSubviewToFront(self.loginButton)
             
             UIView.animate(withDuration: 0.7, animations: {
                 self.loginButton.alpha = 0

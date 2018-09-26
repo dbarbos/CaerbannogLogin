@@ -30,7 +30,7 @@ public class CaerbanoggLogin {
                 }
             }
         } else {
-            print("Please, use the initialize method to use showController function")
+            print("Please, use the initializer method to use showController function")
         }
     }
     
@@ -41,7 +41,7 @@ public class CaerbanoggLogin {
         if let _ = loginController {
             loginController.layout = layout
         } else {
-            print("Please, use the initialize method to use setLayout function")
+            print("Please, use the initializer method to use setLayout function")
         }
     }
     
@@ -61,7 +61,7 @@ public class CaerbanoggLogin {
             })
             
         } else {
-            print("Please, use the initialize method to use logout function")
+            print("Please, use the initializer method to use logout function")
         }
     }
     
@@ -87,7 +87,7 @@ public class CaerbanoggLogin {
             loginController.messageToShowWithTouchID = messageToShow
         } else {
             
-            print("Please, use the initialize method to use touchID function")
+            print("Please, use the initializer method to use touchID function")
         }
     }
     

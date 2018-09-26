@@ -15,12 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
 
-        let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "http://localhost:8080/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "6tw1rqMR6my36cWf2GAHcLnFi1UAgsn3A0Kpd4f7")
+        let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "https://shift.t-systems.com.br/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "6tw1rqMR6my36cWf2GAHcLnFi1UAgsn3A0Kpd4f7")
         
 
         

@@ -124,11 +124,11 @@ extension LoginViewController {
             let b = a.withAlphaComponent(0.7)
             if let txt = textField.placeholder {
                 textField.attributedPlaceholder = NSAttributedString(string: txt,
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: b])
+                                                                   attributes: [NSAttributedString.Key.foregroundColor: b])
             } else {
                 
                 textField.attributedPlaceholder = NSAttributedString(string: "",
-                                                                     attributes: [NSAttributedStringKey.foregroundColor: b])
+                                                                     attributes: [NSAttributedString.Key.foregroundColor: b])
             }
         }
     }
