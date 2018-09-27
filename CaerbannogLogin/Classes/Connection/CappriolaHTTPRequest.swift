@@ -52,8 +52,10 @@ class CappriolaHTTPRequest: NSObject, NSURLConnectionDelegate, URLSessionDelegat
         
         let proposedCredential = URLCredential(user: "CappriolaAppUser", password: "CappriolaAppPassword", persistence: .permanent)
         
-        //URLCredentialStorage.shared.setDefaultCredential(proposedCredential, for: URLProtectionSpace())
+        let protectionSpace = URLProtectionSpace(host: "", port: 80, protocol: "https", realm: nil, authenticationMethod: nil)
         
+        URLCredentialStorage.shared.setDefaultCredential(proposedCredential, for: protectionSpace)
+       
         completionHandler(.useCredential, proposedCredential)
         
     }
