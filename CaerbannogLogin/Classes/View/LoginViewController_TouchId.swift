@@ -1,5 +1,5 @@
 //
-//  LoginViewController_TouchId.swift
+//  LoginViewController.swift
 //  CaerbannogLogin
 //
 //  Created by Leonardo Geus on 29/03/2018.
@@ -10,10 +10,10 @@ import LocalAuthentication
 
 extension LoginViewController {
 
-    public func validadeTouchId(completion: @escaping (_ result: (Bool,Error?)) -> Void) {
+    public func validadeBiometry(completion: @escaping (_ result: (Bool,Error?)) -> Void) {
         authenticationContext.evaluatePolicy(
             .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: messageToShowWithTouchID,
+            localizedReason: messageToShowWithBiometry,
             reply: {(success, error) -> Void in
                 if( success ) {
                     
@@ -29,7 +29,7 @@ extension LoginViewController {
         })
     }
     
-    func testLogoutUserIfTouchIdFails(errorCode:Int) -> Bool {
+    func testLogoutUserIfBiometryFails(errorCode:Int) -> Bool {
         var bool = false
         switch errorCode {
         case LAError.authenticationFailed.rawValue:
@@ -38,9 +38,11 @@ extension LoginViewController {
             bool = true
         case LAError.passcodeNotSet.rawValue:
             bool = true
-        case LAError.touchIDLockout.rawValue:
+        case LAError.biometryLockout.rawValue:
             bool = true
-        case LAError.touchIDNotAvailable.rawValue:
+        case LAError.biometryNotAvailable.rawValue:
+            bool = true
+        case LAError.biometryNotEnrolled.rawValue:
             bool = true
         case LAError.userCancel.rawValue:
             bool = true
@@ -74,11 +76,14 @@ extension LoginViewController {
         case LAError.systemCancel.rawValue:
             message = LoginStrings.systemCancel
             
-        case LAError.touchIDLockout.rawValue:
-            message = LoginStrings.touchIdLocked
+        case LAError.biometryLockout.rawValue:
+            message = LoginStrings.biometricLocked
             
-        case LAError.touchIDNotAvailable.rawValue:
-            message = LoginStrings.touchIdNotAvaibled
+        case LAError.biometryNotAvailable.rawValue:
+            message = LoginStrings.biometricNotAvaible
+            
+        case LAError.biometryNotAvailable.rawValue:
+            message = LoginStrings.biometricNotEnrolled
             
         case LAError.userCancel.rawValue:
             message = LoginStrings.systemCancel
@@ -98,7 +103,7 @@ extension LoginViewController {
         showAlertWithTitle(title: "Error", message: LoginStrings.thereIsntSensor)
     }
     
-    public func thereIsTouchId() -> Bool {
+    public func thereIsBiometry() -> Bool {
         if authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             return true
         }

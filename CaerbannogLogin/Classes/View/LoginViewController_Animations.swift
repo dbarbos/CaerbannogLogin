@@ -23,7 +23,7 @@ extension LoginViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now()+0.1, execute: {
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.05, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.05, options: .curveEaseInOut, animations: {
                 self.loginButton.frame = CGRect(x: self.view.frame.width/2 - self.loginButton.frame.height/2, y: self.loginButton.frame.minY, width: self.loginButton.frame.height, height: self.loginButton.frame.height)
                 
             }) { (sucess) in
@@ -42,7 +42,7 @@ extension LoginViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now()+0.1, execute: {
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.05, options: .curveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.05, options: .curveEaseInOut, animations: {
                 self.loginButton.frame = self.regularLoginButton.frame
                 
             }) { (sucess) in
@@ -79,7 +79,7 @@ extension LoginViewController {
             self.view.addSubview(nextView!)
             self.view.bringSubviewToFront(self.loginButton)
             
-            UIView.animate(withDuration: 0.7, animations: {
+            UIView.animate(withDuration: 0.9, animations: {
                 self.loginButton.alpha = 0
             }, completion: { (_) in
                 self.present(self.nextViewController!, animated: false, completion: nil)

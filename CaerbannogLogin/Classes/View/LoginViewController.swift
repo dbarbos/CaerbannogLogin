@@ -67,8 +67,8 @@ public class LoginViewController: UIViewController {
     ////////////////////////////////////
     
     public var layout:Layout?
-    public var useTouchId = false
-    public var messageToShowWithTouchID = ""
+    public var useBiometry = false
+    public var messageToShowWithBiometry = ""
     var connectionConstant:ConnectionConfig!
     
     ////////////////////////////////////
@@ -111,11 +111,11 @@ public class LoginViewController: UIViewController {
         
         if hasToken() {
             
-            if useTouchId {
+            if useBiometry {
                 
-                if thereIsTouchId() {
+                if thereIsBiometry() {
                     
-                    validadeTouchId(completion: { (result) in
+                    validadeBiometry(completion: { (result) in
                         let resultBool = result.0
                         let error = result.1
                         
@@ -124,7 +124,7 @@ public class LoginViewController: UIViewController {
                         } else {
                             var message = ""
                             if let errorLA = error as? LAError {
-                                if self.testLogoutUserIfTouchIdFails(errorCode: errorLA.code.rawValue) {
+                                if self.testLogoutUserIfBiometryFails(errorCode: errorLA.code.rawValue) {
                                     self.clearKeyChain(completion: { (bool) in
 
                                     })

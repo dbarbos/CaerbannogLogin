@@ -20,12 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
 
-        let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "https://shift.t-systems.com.br/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "6tw1rqMR6my36cWf2GAHcLnFi1UAgsn3A0Kpd4f7")
+        let connection:ConnectionConfig = .LaravelPassportClientPassword(requestTokenEndpoint: "https://shift.t-systems.com.br/oauth/token", validadeTokenEndpoint: "", clientId: "2", clientSecret: "lmCZQrjQ1reN3XXV00m3GAJ2n7caFya3mxD3VXZf")
         
 
         
         CaerbanoggLogin.shared.initialize(whereNextViewControllerIs: initialViewController, connection: connection)
-        CaerbanoggLogin.shared.useTouchID(messageToShow: "Please, confirm the touch ID")
+        CaerbanoggLogin.shared.useBiometry(messageToShow: "Please, confirm the Biometry")
         
         
         let advancedLayout = AdvancedLayout()

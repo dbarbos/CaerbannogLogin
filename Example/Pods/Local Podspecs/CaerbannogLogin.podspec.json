@@ -1,22 +1,25 @@
 {
   "name": "CaerbannogLogin",
-  "version": "0.1.0",
-  "summary": "A short description of CaerbannogLogin.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/leodegeus7/CaerbannogLogin",
+  "version": "0.0.39",
+  "summary": "A easy framework to add login system in your app",
+  "description": "A framework to create a secure and easy login system with customizable layout.",
+  "homepage": "https://github.com/dbarbos/CaerbannogLogin",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "leodegeus7": "leoardodegeus@gmail.com"
+    "leodegeus7": "leonardodegeus@gmail.com"
   },
   "source": {
-    "git": "https://github.com/leodegeus7/CaerbannogLogin.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/dbarbos/CaerbannogLogin.git",
+    "tag": "0.0.39"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "CaerbannogLogin/Classes/**/*"
+  "source_files": "CaerbannogLogin/Classes/**/*",
+  "resources": [
+    "CaerbannogLogin/Images/*.png"
+  ]
 }

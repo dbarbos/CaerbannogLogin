@@ -50,7 +50,10 @@ class CappriolaHTTPRequest: NSObject, NSURLConnectionDelegate, URLSessionDelegat
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         
-        let proposedCredential = URLCredential(user: "CappriolaAppUser", password: "CappriolaAppPassword", persistence: .none)
+        let proposedCredential = URLCredential(user: "CappriolaAppUser", password: "CappriolaAppPassword", persistence: .permanent)
+        
+        //URLCredentialStorage.shared.setDefaultCredential(proposedCredential, for: URLProtectionSpace())
+        
         completionHandler(.useCredential, proposedCredential)
         
     }

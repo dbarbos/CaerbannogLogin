@@ -81,13 +81,13 @@ public class CaerbanoggLogin {
         }
     }
     
-    public func useTouchID(messageToShow:String) {
+    public func useBiometry(messageToShow:String) {
         if let _ = loginController {
-            loginController.useTouchId = true
-            loginController.messageToShowWithTouchID = messageToShow
+            loginController.useBiometry = true
+            loginController.messageToShowWithBiometry = messageToShow
         } else {
             
-            print("Please, use the initializer method to use touchID function")
+            print("Please, use the initializer method to use Biometry function")
         }
     }
     
