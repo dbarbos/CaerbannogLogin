@@ -74,7 +74,7 @@ CaerbanoggLogin.shared.logout(nextViewController: UIViewController())
 
 ## Authors
 
-[dbarbos](https://github.com/dbarbos), dbjuniorjf@hotmail.com
+[dbarbos](https://github.com/dbarbos), dilermando.barbosa@gmail.com<br/>
 [leodegeus7](https://github.com/leodegeus7), leonardodegeus@gmail.com
 
 ## Release History
