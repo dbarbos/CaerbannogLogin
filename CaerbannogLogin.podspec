@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CaerbannogLogin'
   s.version          = '0.0.40'
-  s.summary          = 'A easy framework to add login system in your app'
+  s.summary          = 'An easy framework to add login system in to your app'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ A framework to create a secure and easy login system with customizable layout.
   s.homepage         = 'https://github.com/dbarbos/CaerbannogLogin'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leodegeus7' => 'leonardodegeus@gmail.com' }
+  s.authors          = { 'dbarbos' => 'dilermando.barbosa@gmail.com', 'leodegeus7' => 'leonardodegeus@gmail.com' }
   s.source           = { :git => 'https://github.com/dbarbos/CaerbannogLogin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

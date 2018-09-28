@@ -74,7 +74,7 @@ CaerbanoggLogin.shared.logout(nextViewController: UIViewController())
 
 ## Authors
 
-dbarbos, dbjuniorjf@hotmail.com <br />
+[dbarbos](https://github.com/dbarbos), dbjuniorjf@hotmail.com
 [leodegeus7](https://github.com/leodegeus7), leonardodegeus@gmail.com
 
 ## Release History
@@ -83,6 +83,11 @@ dbarbos, dbjuniorjf@hotmail.com <br />
     * First Commit
 * 0.0.2
     * Created logout method and updaded DemoApp
+* 0.0.40
+    * Updated to Swift 4.2;
+    * Added protection space for CredStore;
+    * Fix biometry challenge to include face ID;
+
 
 ## License
 
