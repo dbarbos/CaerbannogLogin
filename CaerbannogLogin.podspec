@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CaerbannogLogin'
-  s.version          = '0.0.40'
+  s.version          = '0.0.41'
   s.summary          = 'An easy framework to add login system in to your app'
 
 # This description is used to generate tags and improve search results.

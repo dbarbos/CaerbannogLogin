@@ -87,6 +87,9 @@ CaerbanoggLogin.shared.logout(nextViewController: UIViewController())
     * Updated to Swift 4.2;
     * Added protection space for CredStore;
     * Fix biometry challenge to include face ID;
+* 0.0.41
+    * Fixed problem with LAError
+    * Created animation for biometric identification 
 
 
 ## License

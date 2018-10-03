@@ -110,48 +110,62 @@ public class LoginViewController: UIViewController {
         //hideKeyboardWhenTappedAround()
         
         if hasToken() {
-            
-            if useBiometry {
-                
-                if thereIsBiometry() {
+            animateLoginbutton { (bool) in
+                if self.useBiometry {
                     
-                    validadeBiometry(completion: { (result) in
-                        let resultBool = result.0
-                        let error = result.1
+                    if self.thereIsBiometry() {
                         
-                        if resultBool {
-                            self.segueToNextView()
-                        } else {
-                            var message = ""
-                            if let errorLA = error as? LAError {
-                                if self.testLogoutUserIfBiometryFails(errorCode: errorLA.code.rawValue) {
-                                    self.clearKeyChain(completion: { (bool) in
-
-                                    })
+                        self.validadeBiometry(completion: { (result) in
+                            let resultBool = result.0
+                            let error = result.1
+                            
+                            if resultBool {
+                                //self.segueToNextView()
+                                DispatchQueue.main.async {
+                                    self.presentNextViewAnimation()
                                 }
-                                message = self.errorMessageForLAErrorCode(errorCode: errorLA.code.rawValue)
+                                
                             } else {
-                                message = LoginStrings.unknownError
+                                var message = ""
+                                
+                                if let errorLA = error {
+                                    
+                                    if self.testLogoutUserIfBiometryFails(errorCode: errorLA.code) {
+                                        self.clearKeyChain(completion: { (bool) in
+                                            DispatchQueue.main.async {
+                                                self.animateLoginbutton(completion: { (bool) in
+                                                    
+                                                })
+                                            }
+                                        })
+                                    }
+                                    message = self.errorMessageForLAErrorCode(errorCode: errorLA.code)
+                                } else {
+                                    message = LoginStrings.unknownError
+                                }
+                                self.showAlertWithTitle(title: "Error in validation", message: message)
                             }
-                            self.showAlertWithTitle(title: "Error in validation", message: message)
-                        }
-                        
-                    })
-                } else {
-                    
-                    if let next = nextViewController {
-                        self.showAlertWithTitle(title: "Error in validation", message: LoginStrings.thereIsntSensor)
-                        CaerbanoggLogin.shared.logout(nextViewController: next)
+                            
+                        })
                     } else {
-                        self.showAlertWithTitle(title: "Error", message: LoginStrings.fatalErrorView)
+                        
+                        if let next = self.nextViewController {
+                            self.showAlertWithTitle(title: "Error in validation", message: LoginStrings.thereIsntSensor)
+                            CaerbanoggLogin.shared.logout(nextViewController: next)
+                        } else {
+                            self.showAlertWithTitle(title: "Error", message: LoginStrings.fatalErrorView)
+                        }
                     }
+                } else {
+                    self.segueToNextView()
                 }
-            } else {
-                self.segueToNextView()
             }
+            
             
         }
     }
+    
+    
     
     public override func viewWillAppear(_ animated: Bool) {
         
@@ -219,7 +233,9 @@ public class LoginViewController: UIViewController {
             userIdField.resignFirstResponder()
             passwordField.resignFirstResponder()
             if CappriolaReachability.isConnectedToNetwork() {
-                animateLoginbutton()
+                animateLoginbutton { (bool) in
+                    
+                }
                 if hasToken() {
                     
                     //validateToken()
@@ -335,3 +351,7 @@ extension UIViewController {
     }
 }
 
+extension Error {
+    var code: Int { return (self as NSError).code }
+    var domain: String { return (self as NSError).domain }
+}

@@ -50,7 +50,7 @@
 		CDA37C2120584CC7002D3157 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CDB0664E205B1F1700D9EAB5 /* logoColorful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoColorful.png; sourceTree = "<group>"; };
 		D31913EE5C11AC3C585D71AC /* Pods_CaerbannogLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaerbannogLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F87ABF6CC41D0737D4BBE1AC /* CaerbannogLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CaerbannogLogin.podspec; path = ../CaerbannogLogin.podspec; sourceTree = "<group>"; };
+		F87ABF6CC41D0737D4BBE1AC /* CaerbannogLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CaerbannogLogin.podspec; path = ../CaerbannogLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

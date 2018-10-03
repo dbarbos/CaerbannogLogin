@@ -13,7 +13,7 @@ extension LoginViewController {
     // MARK: Animation Methods
     ////////////////////////////////////
     
-    func animateLoginButtonToLoadingState() {
+    func animateLoginButtonToLoadingState(completion: @escaping (_ result: Bool) -> Void) {
         isLoading = true
         
         self.loginButton.setTitle("", for: .normal)
@@ -27,12 +27,12 @@ extension LoginViewController {
                 self.loginButton.frame = CGRect(x: self.view.frame.width/2 - self.loginButton.frame.height/2, y: self.loginButton.frame.minY, width: self.loginButton.frame.height, height: self.loginButton.frame.height)
                 
             }) { (sucess) in
-                
+                completion(true)
             }
         })
     }
     
-    func animateLoginButtonToNormalState() {
+    func animateLoginButtonToNormalState(completion: @escaping (_ result: Bool) -> Void) {
         isLoading = false
         
         self.loginButton.setTitle("Log In", for: .normal)
@@ -46,18 +46,22 @@ extension LoginViewController {
                 self.loginButton.frame = self.regularLoginButton.frame
                 
             }) { (sucess) in
-                
+                completion(true)
             }
         })
         
         
     }
     
-    func animateLoginbutton() {
+    func animateLoginbutton(completion: @escaping (_ result: Bool) -> Void) {
         if isLoading {
-            animateLoginButtonToNormalState()
+            animateLoginButtonToNormalState { (bool) in
+                completion(bool)
+            }
         }else{
-            animateLoginButtonToLoadingState()
+            animateLoginButtonToLoadingState { (bool) in
+                completion(bool)
+            }
         }
     }
     

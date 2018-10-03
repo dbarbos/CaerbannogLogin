@@ -30,7 +30,9 @@ extension LoginViewController : CappriolaRequestHelperDelegate {
     
     func requestFail(message: CappriolaError, requestType: RequestType) {
         
-        self.animateLoginbutton()
+        self.animateLoginbutton { (bool) in
+            
+        }
         
         switch message {
         case .TransportSecurity:
