@@ -30,10 +30,17 @@ public class CaerbanoggLogin {
                 }
             }
         } else {
-            print("Please, use the initializer method to use showController function")
+            fatalError("Please, use the initializer method to use showController function")
         }
     }
     
+    public func getController() -> LoginViewController {
+        if let loginController = loginController {
+            return loginController
+        } else {
+            fatalError("Please, use the initializer method to use showController function")
+        }
+    }
     
     
     public func setLayout(layout:Layout) {

@@ -90,7 +90,8 @@ CaerbanoggLogin.shared.logout(nextViewController: UIViewController())
 * 0.0.41
     * Fixed problem with LAError
     * Created animation for biometric identification 
-
+* 0.0.42
+    * Created function to return Login Controller
 
 ## License
 
